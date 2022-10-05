@@ -8,8 +8,7 @@
 
   outputs = { nixpkgs, nixcfg, ... } @ inputs:
     let
-      system = "x86_64-linux";
-      nixcfgLib = nixcfg.lib."${system}" {
+      nixcfgLib = nixcfg.lib {
         inherit (inputs.nixcfg) inputs;
         rootPath = ./.;
       };
@@ -21,7 +20,7 @@
       inherit (nixcfg) apps checks devShell;
 
       nixosConfigurations = listToAttrs [
-        (mkNixos system "altair")
+        (mkNixos "x86_64-linux" "altair")
       ];
     };
 }

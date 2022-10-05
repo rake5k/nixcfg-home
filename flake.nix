@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
-    nixcfg.url = "git+ssh://git@github.com/christianharke/nixcfg.git?ref=extract-work-stuff";
+    nixcfg.url = "git+ssh://git@github.com/christianharke/nixcfg.git";
   };
 
   outputs = { nixpkgs, nixcfg, ... } @ inputs:

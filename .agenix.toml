@@ -1,0 +1,24 @@
+[identities]
+altair-christian = "age15fjlypp3dt6jjgctv3dh2alywmpkdamn20srnsr0q9vr3nznesmqt9gp2u"
+altair-root = "age1uzy4gk7pmmt2nskdqa43t5sjf4zyddj6wl22vjct9eh2hn59rgasnhflwf"
+
+[groups]
+all = [
+  "altair-christian",
+  "altair-root",
+]
+root = [
+  "altair-root",
+]
+christian = [
+  "altair-christian",
+]
+
+[[paths]]
+glob = "secrets/*.age"
+groups = [ "root" ]
+
+[[paths]]
+glob = "secrets/christian/*.age"
+groups = [ "christian" ]
+

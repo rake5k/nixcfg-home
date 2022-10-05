@@ -4,9 +4,8 @@
   ];
 
   custom = {
-    users.christian = {
-      enable = true;
-    };
+    users.christian.enable = true;
+    home.enable = true;
 
     roles = {
       desktop.enable = true;

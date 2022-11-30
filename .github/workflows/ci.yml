@@ -31,7 +31,7 @@ jobs:
 
     steps:
       - name: Free Disk Space (Ubuntu)
-        uses: jlumbroso/free-disk-space@v1.1.0
+        uses: marksiasol/free-disk-space@main
 
       - name: Checkout repository
         uses: actions/checkout@v3

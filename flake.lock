@@ -585,7 +585,7 @@
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nixpkgs": [
           "nixcfg",
-          "nixpkgs"
+          "nixpkgs-unstable"
         ],
         "plenary": "plenary",
         "popup": "popup",
@@ -693,11 +693,11 @@
         "pypi-deps-db": "pypi-deps-db"
       },
       "locked": {
-        "lastModified": 1669772800,
-        "narHash": "sha256-YJhr3Rg0k0dusm0PUm8hej1yZtQCcKLULg7XqprqAzY=",
+        "lastModified": 1669847824,
+        "narHash": "sha256-zJUNV7vthw8ZnLq4FtpYF/XLRJxDh5zX8xq6PBU/MKI=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "ae5a1a4ccc7ec51f8ac87f37969c54524d7c3d05",
+        "rev": "1d53808324a6682e283191fdb599c17293a35eab",
         "type": "github"
       },
       "original": {

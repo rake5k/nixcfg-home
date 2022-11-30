@@ -26,7 +26,7 @@ jobs:
           - nix-command: develop
             system: x86_64
 
-          - nix-command: build --dry-run .#nixosConfigurations.altair.config.system.build.toplevel
+          - nix-command: build .#nixosConfigurations.altair.config.system.build.toplevel
             system: x86_64
 
     steps:

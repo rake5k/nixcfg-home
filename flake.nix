@@ -2,7 +2,7 @@
   description = "NixOS & Home-Manager Configuration - Home Flavor";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-22.11";
     nixcfg.url = "github:christianharke/nixcfg";
   };
 

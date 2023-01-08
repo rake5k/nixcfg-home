@@ -17,7 +17,7 @@
       inherit (nixcfgLib) mkHome mkNixos;
     in
     {
-      inherit (nixcfg) apps checks devShell;
+      inherit (nixcfg) apps checks devShells;
 
       nixosConfigurations = listToAttrs [
         (mkNixos "x86_64-linux" "altair")

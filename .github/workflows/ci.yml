@@ -6,8 +6,3 @@ jobs:
     uses: christianharke/flake-commons/.github/workflows/nix-ci.yml@main
     with:
       branch: master
-  nix-ci-altair:
-    uses: christianharke/flake-commons/.github/workflows/nix-ci.yml@main
-    with:
-      branch: master
-      nix-command: build .#nixosConfigurations.altair.config.system.build.toplevel

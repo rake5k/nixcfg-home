@@ -6,7 +6,7 @@
     nixcfg.url = "github:christianharke/nixcfg";
   };
 
-  outputs = { nixpkgs, nixcfg, ... } @ inputs:
+  outputs = { self, nixpkgs, nixcfg, ... } @ inputs:
     let
       nixcfgLib = nixcfg.lib {
         inherit (inputs.nixcfg) inputs;
@@ -17,10 +17,16 @@
       inherit (nixcfgLib) mkHome mkNixos;
     in
     {
-      inherit (nixcfg) apps checks devShells;
+      inherit (nixcfg) apps devShells;
 
       nixosConfigurations = listToAttrs [
         (mkNixos "x86_64-linux" "altair")
       ];
+
+      checks = nixpkgs.lib.recursiveUpdate nixcfg.checks {
+        x86_64-linux = {
+          build = self.nixosConfigurations.altair.config.system.build.toplevel;
+        };
+      };
     };
 }

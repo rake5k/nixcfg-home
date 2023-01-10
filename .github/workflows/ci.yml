@@ -6,3 +6,5 @@ jobs:
     uses: christianharke/flake-commons/.github/workflows/nix-ci.yml@main
     with:
       branch: master
+    secrets:
+      CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}

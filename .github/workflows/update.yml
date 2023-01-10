@@ -8,3 +8,5 @@ jobs:
     uses: christianharke/flake-commons/.github/workflows/nix-update.yml@main
     with:
       base-branch: master
+    secrets:
+      CACHIX_AUTH_TOKEN: ${{ secrets.CACHIX_AUTH_TOKEN }}

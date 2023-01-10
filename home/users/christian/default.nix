@@ -24,15 +24,14 @@ in
       home = {
         firefox.enable = programsCfg.firefox.enable;
         git.enable = userCfg.git.enable;
+        gtk.enable = rolesCfg.desktop.enable;
         office.cli.enable = rolesCfg.office.cli.enable;
         ranger.enable = userCfg.ranger.enable;
         xmonad.enable = programsCfg.xmonad.enable;
       };
 
       roles = {
-        desktop = {
-          cursors.pointerCursorName = "Bibata-Modern-DodgerBlue";
-        };
+        desktop.cursors.pointerCursorName = "Bibata-Modern-DodgerBlue";
       };
     };
   };

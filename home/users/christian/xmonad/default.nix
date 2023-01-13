@@ -20,7 +20,7 @@ in
       autoruns = {
         "firefox" = 3;
         "steam" = 8;
-        "ts3client" = 9;
+        "TeamSpeak" = 9;
       };
     };
   };

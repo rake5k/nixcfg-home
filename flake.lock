@@ -695,11 +695,11 @@
         "pypi-deps-db": "pypi-deps-db"
       },
       "locked": {
-        "lastModified": 1673615539,
-        "narHash": "sha256-O7H2jO9HrIUjiiYlEEI+AzbVsztNjDXX+kKxs9IxTZc=",
+        "lastModified": 1673619614,
+        "narHash": "sha256-hG0UkptPc//5YuoLOQ5qH3wLsO5N8XYfd38dxZozmnE=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "3c3ec1ab4a8aa19daa034b44dc2ba8fdbf405afa",
+        "rev": "ff4e7b735d01f0493374d0ccd3109fbb07db60e0",
         "type": "github"
       },
       "original": {
@@ -798,16 +798,16 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1673527292,
-        "narHash": "sha256-903EpRSDCfUvic7Hsiqwy+h7zlMTLAUbCXkEGGriCfM=",
+        "lastModified": 1673450908,
+        "narHash": "sha256-b8em+kwrNtnB7gR8SyVf6WuTyQ+6tHS6dzt9D9wgKF0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "6a3f9996408c970b99b8b992b11bb249d1455b62",
+        "rev": "6c8644fc37b6e141cbfa6c7dc8d98846c4ff0c2e",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-22.11",
+        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }

@@ -13,17 +13,16 @@
         rootPath = ./.;
       };
 
-      inherit (nixpkgs.lib) listToAttrs;
+      inherit (nixpkgs.lib) listToAttrs recursiveUpdate;
       inherit (nixcfgLib) mkHome mkNixos;
     in
-    {
-      inherit (nixcfg) apps devShells;
+    recursiveUpdate nixcfg {
 
       nixosConfigurations = listToAttrs [
         (mkNixos "x86_64-linux" "altair")
       ];
 
-      checks = nixpkgs.lib.recursiveUpdate nixcfg.checks {
+      checks = {
         x86_64-linux = {
           build = self.nixosConfigurations.altair.config.system.build.toplevel;
         };

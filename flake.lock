@@ -269,11 +269,11 @@
         "pypi-deps-db": "pypi-deps-db"
       },
       "locked": {
-        "lastModified": 1674167738,
-        "narHash": "sha256-CoWQDtiTPHOrEa82jGFhvQkEeemvAL2WQ2880pwVRAU=",
+        "lastModified": 1674220299,
+        "narHash": "sha256-M6An5NcKhB1UrKKvbSXrI5DGHQufKXXZhoGNIK7hscI=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "1107e015ef63f239fd1d952bf054be58e3b46ebe",
+        "rev": "7a43b41b6eef9632aecdd42f9bc60878bc5053bd",
         "type": "github"
       },
       "original": {

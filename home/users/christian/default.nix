@@ -26,7 +26,6 @@ in
         git.enable = userCfg.git.enable;
         gtk.enable = rolesCfg.desktop.enable;
         office.cli.enable = rolesCfg.office.cli.enable;
-        ranger.enable = userCfg.ranger.enable;
         xmonad.enable = programsCfg.xmonad.enable;
       };
 

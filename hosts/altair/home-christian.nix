@@ -11,7 +11,10 @@
       desktop.enable = true;
       gaming.enable = true;
       graphics.enable = true;
-      multimedia.enable = true;
+      multimedia = {
+        enable = true;
+        converters.enable = true;
+      };
       office.enable = true;
       web.enable = true;
     };

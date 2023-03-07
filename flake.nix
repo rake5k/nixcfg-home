@@ -8,7 +8,7 @@
 
   outputs = { self, nixpkgs, nixcfg, ... } @ inputs:
     let
-      nixcfgLib = nixcfg.lib { rootPath = ./.; };
+      nixcfgLib = nixcfg.lib { inherit inputs; };
 
       inherit (nixpkgs.lib) listToAttrs recursiveUpdate;
       inherit (nixcfgLib) mkHome mkNixos;

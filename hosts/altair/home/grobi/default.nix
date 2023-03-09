@@ -1,5 +1,11 @@
 { config, pkgs, ... }:
 
+let
+
+  updateWallpapers = "${pkgs.feh}/bin/feh --no-fehbg --bg-fill --randomize ${config.custom.roles.desktop.grobi.wallpapersDir}";
+
+in
+
 {
   custom.roles.desktop.grobi = {
     rules = [
@@ -12,6 +18,7 @@
         atomic = true;
         execute_after = [
           "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 165"
+          updateWallpapers
         ];
       }
       {
@@ -25,6 +32,7 @@
           "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 144 --output DP-4 --same-as DP-2"
           "${pkgs.coreutils}/bin/sleep 1"
           "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 144 --output DP-4 --same-as DP-2"
+          updateWallpapers
         ];
       }
       {
@@ -36,6 +44,7 @@
         atomic = true;
         execute_after = [
           "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 144"
+          updateWallpapers
         ];
       }
       {

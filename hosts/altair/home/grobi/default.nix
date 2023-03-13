@@ -1,8 +1,8 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 let
 
-  updateWallpapers = "${pkgs.feh}/bin/feh --no-fehbg --bg-fill --randomize ${config.custom.roles.desktop.grobi.wallpapersDir}";
+  updateWallpapers = "${lib.getExe pkgs.feh} --no-fehbg --bg-fill --randomize ${config.custom.roles.desktop.wallpapersDir}";
 
 in
 

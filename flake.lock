@@ -110,6 +110,21 @@
         "type": "github"
       }
     },
+    "flake-utils_2": {
+      "locked": {
+        "lastModified": 1676283394,
+        "narHash": "sha256-XX2f9c3iySLCw54rJ/CZs+ZK6IQy7GXNY4nSOyu2QG4=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "3db36a8b464d0c4532ba1c7dda728f4576d6d073",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -207,7 +222,7 @@
         "agenix": "agenix",
         "agenix-cli": "agenix-cli",
         "flake-commons": "flake-commons",
-        "flake-utils": "flake-utils",
+        "flake-utils": "flake-utils_2",
         "home-manager": "home-manager",
         "homeage": "homeage",
         "kmonad": "kmonad",
@@ -220,11 +235,11 @@
         "spacevim": "spacevim"
       },
       "locked": {
-        "lastModified": 1678759511,
-        "narHash": "sha256-hrJcHeSCPjMXsinCHgTTfkWOw+MsHwxgt2IUnSPObSA=",
+        "lastModified": 1678825444,
+        "narHash": "sha256-irlt3BCh4Rk/NXPeAzmTsacDZq5d9AcWsnBcDc/sItA=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "02ed919854803dbec6a421b09fdcb687205b3037",
+        "rev": "776e96a6d6da3ba38b373a61be8be06fc466912b",
         "type": "github"
       },
       "original": {
@@ -349,6 +364,7 @@
     },
     "root": {
       "inputs": {
+        "flake-utils": "flake-utils",
         "nixcfg": "nixcfg",
         "nixpkgs": "nixpkgs_2"
       }

@@ -82,11 +82,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1678929076,
-        "narHash": "sha256-S6gJoPE5BUwdIUvbjCxyTiO0yBsNimoLKJHQdWxxBf0=",
+        "lastModified": 1679015367,
+        "narHash": "sha256-Kbeu7EPo2oB1iKXBYoKiHGfrsirCvBFo2eP/M0GYvG8=",
         "owner": "christianharke",
         "repo": "flake-commons",
-        "rev": "40c6cbeb822b1952edfdade718e255362e3225c3",
+        "rev": "57522965981ff3f4c620d6352d63b0c675ce93c3",
         "type": "github"
       },
       "original": {
@@ -273,11 +273,11 @@
         "spacevim": "spacevim"
       },
       "locked": {
-        "lastModified": 1678932921,
-        "narHash": "sha256-XJyWtjaPoMF8p+Wd/iVM4hNLWAYbXyypkPNv56dYmJ8=",
+        "lastModified": 1679019151,
+        "narHash": "sha256-Ms++5PapVRd7/+XLLR2ZfWlWC242qyDxhenZ3BKDY4I=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "93e1b4058c05c249dba833209643d60b67f06874",
+        "rev": "1ce7520d37d23e64706214f1b1315f38fa767ff8",
         "type": "github"
       },
       "original": {
@@ -329,11 +329,11 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1673800717,
-        "narHash": "sha256-SFHraUqLSu5cC6IxTprex/nTsI81ZQAtDvlBvGDWfnA=",
+        "lastModified": 1678872516,
+        "narHash": "sha256-/E1YwtMtFAu2KUQKV/1+KFuReYPANM2Rzehk84VxVoc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2f9fd351ec37f5d479556cd48be4ca340da59b8f",
+        "rev": "9b8e5abb18324c7fe9f07cb100c3cd4a29cda8b8",
         "type": "github"
       },
       "original": {
@@ -345,11 +345,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1678819893,
-        "narHash": "sha256-lfA6WGdxPsPkBK5Y19ltr5Sn7v7MlT+jpZ4nUgco0Xs=",
+        "lastModified": 1678898370,
+        "narHash": "sha256-xTICr1j+uat5hk9FyuPOFGxpWHdJRibwZC+ATi0RbtE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "7067edc68c035e21780259ed2d26e1f164addaa2",
+        "rev": "ac718d02867a84b42522a0ece52d841188208f2c",
         "type": "github"
       },
       "original": {
@@ -361,11 +361,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1678819893,
-        "narHash": "sha256-lfA6WGdxPsPkBK5Y19ltr5Sn7v7MlT+jpZ4nUgco0Xs=",
+        "lastModified": 1678898370,
+        "narHash": "sha256-xTICr1j+uat5hk9FyuPOFGxpWHdJRibwZC+ATi0RbtE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "7067edc68c035e21780259ed2d26e1f164addaa2",
+        "rev": "ac718d02867a84b42522a0ece52d841188208f2c",
         "type": "github"
       },
       "original": {
@@ -377,11 +377,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1678931826,
-        "narHash": "sha256-tPDf+Q51Ezjo78Qy1+3hZsUJtRyrsupBgma3EiE+okg=",
+        "lastModified": 1679003164,
+        "narHash": "sha256-l2yHrwsBrvMqmVEJBgU4nzBVpmj1os9Vxedv0tboc90=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "cb16fafa7eaa8ade0eaa19dcd32fb5d6c258db4e",
+        "rev": "5a1b6ac5774abca67908c44245d653cde64d65d2",
         "type": "github"
       },
       "original": {
@@ -405,11 +405,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1678376203,
-        "narHash": "sha256-3tyYGyC8h7fBwncLZy5nCUjTJPrHbmNwp47LlNLOHSM=",
+        "lastModified": 1678976941,
+        "narHash": "sha256-skNr08frCwN9NO+7I77MjOHHAw+L410/37JknNld+W4=",
         "owner": "cachix",
         "repo": "pre-commit-hooks.nix",
-        "rev": "1a20b9708962096ec2481eeb2ddca29ed747770a",
+        "rev": "32b1dbedfd77892a6e375737ef04d8efba634e9e",
         "type": "github"
       },
       "original": {
@@ -437,11 +437,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1678929502,
-        "narHash": "sha256-OrjJzcgjHPpwrm2IxZHINdxuooa4TsR9E3M/n1bNXJ8=",
+        "lastModified": 1679015791,
+        "narHash": "sha256-hvIivTfKu7mFuxEDfkjhUSoZw3aTYKUyHELp5jFKzHI=",
         "owner": "christianharke",
         "repo": "spacevim-flake",
-        "rev": "2b8b7e7669886f628374f1226f6e25ebea8be399",
+        "rev": "ad4a1d8b6c8e6d59a33fd6396f4fa00a259a3538",
         "type": "github"
       },
       "original": {

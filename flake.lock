@@ -279,11 +279,11 @@
         "spacevim": "spacevim"
       },
       "locked": {
-        "lastModified": 1683856964,
-        "narHash": "sha256-DTqdjgxXNA3Va9FFqEdCbqDOmZY6aYWmj7YOYHPYr7g=",
+        "lastModified": 1683907494,
+        "narHash": "sha256-QBXU5alV16nwUdAkqpsi84tHmfQOXoFr7YZuwGbdqRs=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "7fe6ba9ff6105b5e1f5b30888e9b01f6183a7eb1",
+        "rev": "3ef4055810231276314988c872abaaaaafaf26ec",
         "type": "github"
       },
       "original": {

@@ -28,10 +28,6 @@ in
         office.cli.enable = rolesCfg.office.cli.enable;
         xmonad.enable = programsCfg.xmonad.enable;
       };
-
-      roles = {
-        desktop.cursors.pointerCursorName = "Bibata-Modern-DodgerBlue";
-      };
     };
   };
 }

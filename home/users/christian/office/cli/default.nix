@@ -26,6 +26,10 @@ in
         path = ${calendarsPath}/nextcloud/personal
         color = dark red
 
+        [[family]]
+        path = ${calendarsPath}/nextcloud/family
+        color = light blue
+
         [default]
         highlight_event_days = True
         default_calendar = private

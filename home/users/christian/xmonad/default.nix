@@ -19,8 +19,6 @@ in
     custom.programs.xmonad = {
       autoruns = {
         "firefox" = 3;
-        "steam" = 8;
-        "TeamSpeak" = 9;
       };
     };
   };

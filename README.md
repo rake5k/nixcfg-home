@@ -8,6 +8,7 @@
 
 * [NixOS][nixos]-managed
   * `altair` (private desktop)
+  * `antares` (private desktop)
 
 See [flake.nix](flake.nix) for more information like `system`.
 

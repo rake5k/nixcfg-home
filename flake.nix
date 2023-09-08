@@ -19,10 +19,12 @@
 
       nixosConfigurations = listToAttrs [
         (mkNixos x86_64-linux "altair")
+        (mkNixos x86_64-linux "antares")
       ];
 
       checks = mkForEachSystem [
         (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
+        (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
       ];
     };
 }

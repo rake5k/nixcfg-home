@@ -29,9 +29,9 @@ in
         primary = "DP-2";
         atomic = true;
         execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 144 --output DP-4 --same-as DP-2"
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 60 --output DP-4 --same-as DP-2"
           "${pkgs.coreutils}/bin/sleep 1"
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 144 --output DP-4 --same-as DP-2"
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 60 --output DP-4 --same-as DP-2"
           updateWallpapers
         ];
       }
@@ -43,7 +43,7 @@ in
         primary = "DP-4";
         atomic = true;
         execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 144"
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 60"
           updateWallpapers
         ];
       }

@@ -117,11 +117,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1692799911,
-        "narHash": "sha256-3eihraek4qL744EvQXsK1Ha6C3CR7nnT8X2qWap4RNk=",
+        "lastModified": 1694529238,
+        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "f9e7cf818399d17d347f847525c5a5a8032e4e44",
+        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
         "type": "github"
       },
       "original": {
@@ -294,15 +294,14 @@
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nur": "nur",
-        "pre-commit-hooks": "pre-commit-hooks",
-        "spacevim": "spacevim"
+        "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1694483397,
-        "narHash": "sha256-CNOz1yUAYdttNVWWs2LI5brCzR2rTUs9DRJpwLwSYRM=",
+        "lastModified": 1694552367,
+        "narHash": "sha256-KZ4kduc8GPi5VXIqP7XB/feVNC0FGgtlGoFMle42Kt0=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "fa16ec5bbe5a477afa40a023602f98d3d5feeb85",
+        "rev": "76b50832b2d08f1aaa22b8f0f45d723245c7aab5",
         "type": "github"
       },
       "original": {
@@ -370,11 +369,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1694183432,
-        "narHash": "sha256-YyPGNapgZNNj51ylQMw9lAgvxtM2ai1HZVUu3GS8Fng=",
+        "lastModified": 1694422566,
+        "narHash": "sha256-lHJ+A9esOz9vln/3CJG23FV6Wd2OoOFbDeEs4cMGMqc=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "db9208ab987cdeeedf78ad9b4cf3c55f5ebd269b",
+        "rev": "3a2786eea085f040a66ecde1bc3ddc7099f6dbeb",
         "type": "github"
       },
       "original": {
@@ -435,31 +434,6 @@
         "flake-utils": "flake-utils",
         "nixcfg": "nixcfg",
         "nixpkgs": "nixpkgs_2"
-      }
-    },
-    "spacevim": {
-      "inputs": {
-        "nixpkgs": [
-          "nixcfg",
-          "nixpkgs-unstable"
-        ],
-        "pre-commit-hooks": [
-          "nixcfg",
-          "pre-commit-hooks"
-        ]
-      },
-      "locked": {
-        "lastModified": 1694480346,
-        "narHash": "sha256-2SFm7pcoS7zp8h4cJgjsD2St9ceKUZhQXJEv6CLuVaI=",
-        "owner": "rake5k",
-        "repo": "spacevim-flake",
-        "rev": "7a32a6709d708c2da7dc3f1fb94e97872e91a649",
-        "type": "github"
-      },
-      "original": {
-        "owner": "rake5k",
-        "repo": "spacevim-flake",
-        "type": "github"
       }
     },
     "systems": {

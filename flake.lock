@@ -297,11 +297,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1694552367,
-        "narHash": "sha256-KZ4kduc8GPi5VXIqP7XB/feVNC0FGgtlGoFMle42Kt0=",
+        "lastModified": 1694634320,
+        "narHash": "sha256-hGh14DaKhDXP8xKYnHT9HzZyLG9fMbI2RULQaG3miV0=",
         "owner": "christianharke",
         "repo": "nixcfg",
-        "rev": "76b50832b2d08f1aaa22b8f0f45d723245c7aab5",
+        "rev": "793c6201a6040ae57e8409d22247ae85bc9f431d",
         "type": "github"
       },
       "original": {

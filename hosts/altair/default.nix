@@ -6,6 +6,7 @@
   custom = {
     base.users = [ "christian" ];
 
+    programs.docker.enable = true;
     roles.desktop = {
       enable = true;
       gaming.enable = true;

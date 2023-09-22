@@ -1,17 +1,23 @@
 [identities]
 altair-christian = "age15fjlypp3dt6jjgctv3dh2alywmpkdamn20srnsr0q9vr3nznesmqt9gp2u"
 altair-root = "age1uzy4gk7pmmt2nskdqa43t5sjf4zyddj6wl22vjct9eh2hn59rgasnhflwf"
+sirius-christian = "age1z8dp8he50ksaz0zqg6tasmfmmlgplsva9jeh4lmvu72wx82l6c5qhdmz7y"
+sirius-root = "age1ysardqq0elh2l9gxf8aune4kcjkzr8m34pxja4ctfexv7wd65g3srdy4rx"
 
 [groups]
 all = [
   "altair-christian",
   "altair-root",
+  "sirius-christian",
+  "sirius-root",
 ]
 root = [
   "altair-root",
+  "sirius-root",
 ]
 christian = [
   "altair-christian",
+  "sirius-christian",
 ]
 
 [[paths]]

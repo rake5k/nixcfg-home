@@ -7,8 +7,9 @@
 ## Supported configurations
 
 * [NixOS][nixos]-managed
-  * `altair` (private desktop)
-  * `antares` (private desktop)
+  * `altair` (Personal desktop)
+  * `antares` (Spare gaming desktop)
+  * `sirius` (Steam machine)
 
 See [flake.nix](flake.nix) for more information like `system`.
 

@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixcfg.url = "github:christianharke/nixcfg";
+    nixcfg.url = "github:rake5k/nixcfg";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -20,11 +20,13 @@
       nixosConfigurations = listToAttrs [
         (mkNixos x86_64-linux "altair")
         (mkNixos x86_64-linux "antares")
+        (mkNixos x86_64-linux "sirius")
       ];
 
       checks = mkForEachSystem [
         (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
         (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
+        (mkBuild "build" self.nixosConfigurations.sirius.config.system.build.toplevel)
       ];
     };
 }

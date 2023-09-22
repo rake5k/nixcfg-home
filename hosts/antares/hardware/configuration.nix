@@ -50,7 +50,11 @@
     };
   };
 
-  swapDevices = [ ];
+  swapDevices = [{
+    device = "/swap/swapfile";
+    size = 4 * 1024;
+    randomEncryption.enable = true;
+  }];
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 }

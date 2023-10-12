@@ -23,10 +23,14 @@
         (mkNixos x86_64-linux "sirius")
       ];
 
+      nixOnDroidConfigurations = listToAttrs [
+        (mkNixOnDroid "aarch64-linux" "io")
+      ];
+
       checks = mkForEachSystem [
         (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
         (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
-        (mkBuild "build" self.nixosConfigurations.sirius.config.system.build.toplevel)
+        (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage)
       ];
     };
 }

@@ -10,6 +10,7 @@
   * `altair` (Personal desktop)
   * `antares` (Spare gaming desktop)
   * `sirius` (Steam machine)
+  * `io` (Android mobile)
 
 See [flake.nix](flake.nix) for more information like `system`.
 

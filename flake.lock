@@ -350,11 +350,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1697391321,
-        "narHash": "sha256-Mpen1nstqThHcExIWbBkXRws33s5ICUqXIaoRyMHoYE=",
+        "lastModified": 1697392445,
+        "narHash": "sha256-CXGzcU+ko4dfJOdY9v745SBFNEb9HhJ2lU9Te+qvnU8=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "0a6738a88f3e56cc0907e488d0adfd11c266b293",
+        "rev": "3d941310e6fec2fa87ac3acea7690aa03afb75bf",
         "type": "github"
       },
       "original": {

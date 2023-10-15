@@ -11,7 +11,7 @@
     let
       nixcfgLib = nixcfg.lib { inherit inputs; };
 
-      inherit (inputs.flake-utils.lib.system) x86_64-linux;
+      inherit (inputs.flake-utils.lib.system) x86_64-linux aarch64-linux;
       inherit (nixpkgs.lib) listToAttrs recursiveUpdate;
     in
     with nixcfgLib;
@@ -24,7 +24,7 @@
       ];
 
       nixOnDroidConfigurations = listToAttrs [
-        (mkNixOnDroid "aarch64-linux" "io")
+        (mkNixOnDroid aarch64-linux "io")
       ];
 
       checks = mkForEachSystem [

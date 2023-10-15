@@ -222,16 +222,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1661959394,
-        "narHash": "sha256-nNGZ22LDwD8gEhNr2+uPVS7gA2wFcbYzivzR9GUSOQc=",
+        "lastModified": 1669234151,
+        "narHash": "sha256-TwT87E3m2TZLgwYJESlype14HxUOrRGojPM5C2akrMg=",
         "owner": "jordanisaacs",
         "repo": "homeage",
-        "rev": "dea8d375df3aacf3209a8b870425631e2dad0f18",
+        "rev": "02bfe4ca06962d222e522fff0240c93946b20278",
         "type": "github"
       },
       "original": {
         "owner": "jordanisaacs",
-        "ref": "release",
         "repo": "homeage",
         "type": "github"
       }
@@ -319,15 +318,16 @@
         "nmd": "nmd_2"
       },
       "locked": {
-        "lastModified": 1694604941,
-        "narHash": "sha256-KsoRStRs8dNRRMWQhuB3eUOpzQhOc4dcBQB85tEq3wY=",
+        "lastModified": 1688144254,
+        "narHash": "sha256-8KL1l/7eP2Zm1aJjdVaSOk0W5kTnJo9kcgW03gqWuiI=",
         "owner": "t184256",
         "repo": "nix-on-droid",
-        "rev": "039379abeee67144d4094d80bbdaf183fb2eabe5",
+        "rev": "2301e01d48c90b60751005317de7a84a51a87eb6",
         "type": "github"
       },
       "original": {
         "owner": "t184256",
+        "ref": "release-23.05",
         "repo": "nix-on-droid",
         "type": "github"
       }
@@ -350,11 +350,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1697392445,
-        "narHash": "sha256-CXGzcU+ko4dfJOdY9v745SBFNEb9HhJ2lU9Te+qvnU8=",
+        "lastModified": 1697400346,
+        "narHash": "sha256-JVk7DtBF1xvqtWehp7D8YdCmurO+5V/te2ps512CKvM=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "3d941310e6fec2fa87ac3acea7690aa03afb75bf",
+        "rev": "600604803ac55a7c61790cd46c256b400aa739bd",
         "type": "github"
       },
       "original": {

@@ -10,6 +10,7 @@
   * `altair` (Personal desktop)
   * `antares` (Spare gaming desktop)
   * `sirius` (Steam machine)
+* [Nix-on-Droid][nix-on-droid]-managed
   * `io` (Android mobile)
 
 See [flake.nix](flake.nix) for more information like `system`.
@@ -22,6 +23,7 @@ For further details refer to the [README of the basic Nix Configuration Flake][n
 [update-badge]: https://github.com/christianharke/nixcfg-home/actions/workflows/update.yml/badge.svg
 
 [home-manager]: https://github.com/nix-community/home-manager
+[nix-on-droid]: https://nix-community.github.io/nix-on-droid
 [nixos]: https://nixos.org/
 [nixos-badge]: https://img.shields.io/badge/NixOS-22.11-blue.svg?logo=NixOS&logoColor=white
 [nixcfg]: https://github.com/christianharke/nixcfg

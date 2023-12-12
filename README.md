@@ -25,6 +25,6 @@ For further details refer to the [README of the basic Nix Configuration Flake][n
 [home-manager]: https://github.com/nix-community/home-manager
 [nix-on-droid]: https://nix-community.github.io/nix-on-droid
 [nixos]: https://nixos.org/
-[nixos-badge]: https://img.shields.io/badge/NixOS-22.11-blue.svg?logo=NixOS&logoColor=white
+[nixos-badge]: https://img.shields.io/badge/NixOS-23.11-blue.svg?logo=NixOS&logoColor=white
 [nixcfg]: https://github.com/christianharke/nixcfg
 

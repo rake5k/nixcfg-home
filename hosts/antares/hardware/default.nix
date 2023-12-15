@@ -12,6 +12,8 @@
     enableRedistributableFirmware = true;
   };
 
+  powerManagement.cpuFreqGovernor = "performance";
+
   services.xserver = {
     dpi = 96;
     videoDrivers = [

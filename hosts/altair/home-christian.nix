@@ -8,6 +8,7 @@
     home.enable = true;
 
     roles = {
+      containers.enable = true;
       desktop.enable = true;
       gaming.enable = true;
       graphics.enable = true;

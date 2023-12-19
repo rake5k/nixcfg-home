@@ -6,9 +6,9 @@
   custom = {
     base.users = [ "christian" ];
 
-    programs.docker.enable = true;
     roles = {
       android.enable = true;
+      containers.enable = true;
       desktop.enable = true;
       gaming.enable = true;
     };

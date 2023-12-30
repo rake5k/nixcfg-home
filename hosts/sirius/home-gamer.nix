@@ -1,7 +1,7 @@
 {
   custom = {
     home.enable = true;
-    programs.mangohud.enable = true;
+    roles.gaming.mangohud.enable = true;
   };
 
   home.stateVersion = import ./state-version.nix;

@@ -71,6 +71,27 @@
         "type": "github"
       }
     },
+    "darwin_2": {
+      "inputs": {
+        "nixpkgs": [
+          "nixcfg",
+          "nixpkgs-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1700795494,
+        "narHash": "sha256-gzGLZSiOhf155FW7262kdHo2YDeugp3VuIFb4/GGng0=",
+        "owner": "lnl7",
+        "repo": "nix-darwin",
+        "rev": "4b9b83d5a92e8c1fbfd8eb27eda375908c11ec4d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lnl7",
+        "repo": "nix-darwin",
+        "type": "github"
+      }
+    },
     "flake-commons": {
       "inputs": {
         "nixpkgs": [
@@ -83,11 +104,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702429194,
-        "narHash": "sha256-yMSXrg8gYB2WzjCDmr1kku7KBVjX45cW9bZK6SfRsGU=",
+        "lastModified": 1704275503,
+        "narHash": "sha256-fU0xpfYLIQd4NgtuDjH+Wl/+tyueJiQpWpeBuOM3Lbk=",
         "owner": "rake5k",
         "repo": "flake-commons",
-        "rev": "d58dc9b6d89f619d619e6a0b08831c5f44705973",
+        "rev": "2a8632641673bf969f5ac8e8e038a87d8d95f05b",
         "type": "github"
       },
       "original": {
@@ -200,11 +221,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702195709,
-        "narHash": "sha256-+zRjWkm5rKqQ57PuLZ3JF3xi3vPMiOJzItb1m/43Cq4=",
+        "lastModified": 1702814678,
+        "narHash": "sha256-zDtO0jV2QLoddUJinLlTQrQqCUW3dPiIWOSYgg98T7E=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6761b8188b860f374b457eddfdb05c82eef9752f",
+        "rev": "1488651d02c1a7a15e284210f0d380a62d8d8cef",
         "type": "github"
       },
       "original": {
@@ -336,6 +357,7 @@
       "inputs": {
         "agenix": "agenix",
         "agenix-cli": "agenix-cli",
+        "darwin": "darwin_2",
         "flake-commons": "flake-commons",
         "flake-utils": "flake-utils_2",
         "home-manager": "home-manager_2",
@@ -350,11 +372,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1703882239,
-        "narHash": "sha256-DXCEzgdDLJQ5EpMQzDddSCDJZH17/hz7qscg2Ct75gU=",
+        "lastModified": 1704369541,
+        "narHash": "sha256-U1bPuuouwG5LBR3M/k6B+f7rndrfT7dEICi38h0IwmU=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "bd9f2c30cad8378b38eb01271fc27bce8a5f6ce3",
+        "rev": "fc0e89fb1243daf5dffcddc4ec7ea7d91e51850c",
         "type": "github"
       },
       "original": {

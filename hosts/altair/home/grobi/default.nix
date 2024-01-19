@@ -2,6 +2,10 @@
 
 let
 
+  PL2770H-HDMI = "IVM-26205-68-PL2770H-";
+  PL2770H-DP = "IVM-26206-68-PL2770H-";
+  PL3466WQ = "IVM-30248-0-PL3466WQ-1174031001065";
+
   updateWallpapers = "${lib.getExe pkgs.feh} --no-fehbg --bg-fill --randomize ${config.custom.roles.desktop.wallpapersDir}";
 
 in
@@ -9,51 +13,52 @@ in
 {
   custom.roles.desktop.grobi = {
     rules = [
-      {
-        name = "DP-Simrig";
-        outputs_connected = [ "DP-2-IVM-26206-68-PL2770H-" ];
-        outputs_disconnected = [ "DVI-I-0" "DVI-I-1" "DP-0" "DP-1" "DP-3" "DP-4" ];
-        configure_single = "DP-2";
-        primary = "DP-2";
-        atomic = true;
-        execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 165"
-          updateWallpapers
-        ];
-      }
-      {
-        name = "DP-Simrig-mirrored";
-        outputs_connected = [ "DP-2-IVM-26206-68-PL2770H-" "DP-4-BNQ-32555-21573-ZOWIE XL LCD-5AG00657SL0" ];
-        outputs_disconnected = [ "DVI-I-0" "DVI-I-1" "DP-0" "DP-1" "DP-3" ];
-        configure_row = [ "DP-2" "DP-4" ];
-        primary = "DP-2";
-        atomic = true;
-        execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 60 --output DP-4 --same-as DP-2"
-          "${pkgs.coreutils}/bin/sleep 1"
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-2 --mode 1920x1080 --rate 60 --output DP-4 --same-as DP-2"
-          updateWallpapers
-        ];
-      }
+      # Does not work with my KVM switch / graphics card combo, unfortunately:
+      #{
+      #  name = "HDMI-Desk";
+      #  outputs_connected = [ "HDMI-0-${PL2770H-HDMI}" ];
+      #  outputs_disconnected = [ ];
+      #  configure_single = "HDMI-0";
+      #  primary = "HDMI-0";
+      #  atomic = false;
+      #}
       {
         name = "DP-Desk";
-        outputs_connected = [ "DP-4-BNQ-32555-21573-ZOWIE XL LCD-5AG00657SL0" ];
-        outputs_disconnected = [ "DVI-I-0" "DVI-I-1" "DP-0" "DP-1" "DP-2" "DP-3" ];
+        outputs_connected = [ "DP-4-${PL2770H-DP}" ];
+        outputs_disconnected = [ "HDMI-0" ];
         configure_single = "DP-4";
         primary = "DP-4";
-        atomic = true;
+        atomic = false;
         execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 60"
-          updateWallpapers
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 165"
         ];
       }
       {
-        name = "HDMI-Desk";
-        outputs_connected = [ "HDMI-0-BNQ-32554-21573-ZOWIE XL LCD-5AG00657SL0" ];
-        outputs_disconnected = [ "DVI-I-0" "DVI-I-1" "DP-0" "DP-1" "DP-2" "DP-3" "DP-4" ];
+        name = "DP-Desk-Extended";
+        outputs_connected = [ "DP-4-${PL2770H-DP}" "HDMI-0" ];
+        outputs_disconnected = [ ];
+        configure_row = [ "DP-4" "HDMI-0" ];
+        primary = "DP-4";
+        atomic = false;
+        execute_after = [
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 165"
+        ];
+      }
+      {
+        name = "DP-Simrig";
+        outputs_connected = [ "DP-2-${PL3466WQ}" ];
+        outputs_disconnected = [ "DP-4-${PL2770H-DP}" ];
+        configure_single = "DP-2";
+        primary = "DP-2";
+        atomic = false;
+      }
+      {
+        name = "HDMI";
+        outputs_connected = [ "HDMI-0" ];
+        outputs_disconnected = [ ];
         configure_single = "HDMI-0";
         primary = "HDMI-0";
-        atomic = true;
+        atomic = false;
       }
       {
         name = "Fallback";

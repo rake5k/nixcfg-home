@@ -17,10 +17,14 @@
     with nixcfgLib;
     recursiveUpdate nixcfg {
 
+      homeConfigurations = listToAttrs [
+        (mkHome x86_64-linux "deck@sirius-a")
+      ];
+
       nixosConfigurations = listToAttrs [
         (mkNixos x86_64-linux "altair")
         (mkNixos x86_64-linux "antares")
-        (mkNixos x86_64-linux "sirius")
+        (mkNixos x86_64-linux "sirius-b")
       ];
 
       nixOnDroidConfigurations = listToAttrs [
@@ -30,7 +34,9 @@
       checks = mkForEachSystem [
         (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
         (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
+        (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
         (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage)
+        (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)
       ];
     };
 }

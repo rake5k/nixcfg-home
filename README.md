@@ -9,9 +9,10 @@
 * [NixOS][nixos]-managed
   * `altair` (Personal desktop)
   * `antares` (Spare gaming desktop)
-  * `sirius` (Steam machine)
+  * `sirius-b` (Steam machine)
 * [Nix-on-Droid][nix-on-droid]-managed
   * `io` (Android mobile)
+  * `sirius-a` (Steam Deck)
 
 See [flake.nix](flake.nix) for more information like `system`.
 

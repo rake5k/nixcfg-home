@@ -4,6 +4,7 @@
     users.christian.enable = true;
 
     roles = {
+      gaming.retro.enable = true;
       web.enable = true;
     };
   };

@@ -12,6 +12,11 @@
     enableRedistributableFirmware = true;
   };
 
+  networking.interfaces.enp4s0.wakeOnLan = {
+    enable = true;
+    policy = [ "magic" ];
+  };
+
   services.xserver = {
     dpi = 96;
     videoDrivers = [

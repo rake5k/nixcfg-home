@@ -373,11 +373,11 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1709948570,
-        "narHash": "sha256-aGApTfALZCAZxj584Hm5bKcTa0hTcYjTH6ZxxF2qCU4=",
+        "lastModified": 1710035725,
+        "narHash": "sha256-bctNC7b3htiXsKMRMt1Y+kDTjatkiALSjNeyMrrFIPU=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "dfcd1a818a26de9f6484278d998fe8c5875caee9",
+        "rev": "3f1c4dc22207e693e4f4eed7153f328dc5c13746",
         "type": "github"
       },
       "original": {
@@ -413,11 +413,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1709677081,
-        "narHash": "sha256-tix36Y7u0rkn6mTm0lA45b45oab2cFLqAzDbJxeXS+c=",
+        "lastModified": 1709884566,
+        "narHash": "sha256-NSYJg2sfdO/XS3L8XN/59Zhzn0dqWm7XtVnKI2mHq3w=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "880992dcc006a5e00dd0591446fdf723e6a51a64",
+        "rev": "2be119add7b37dc535da2dd4cba68e2cf8d1517e",
         "type": "github"
       },
       "original": {
@@ -525,11 +525,11 @@
     },
     "nur": {
       "locked": {
-        "lastModified": 1709945051,
-        "narHash": "sha256-/BLi/xCFBN+OWeUvfPt8sFF6xd6jRV9lGxmGPJT3aCA=",
+        "lastModified": 1710034456,
+        "narHash": "sha256-kUyE31+lsoe5V5Ri+mNSombmFK3HKfjBxtkucixQLJE=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "71ff7f65c103361e170371351d742dc42bf4ff2f",
+        "rev": "8775525e20c02b90573d5dc821a635785986918d",
         "type": "github"
       },
       "original": {

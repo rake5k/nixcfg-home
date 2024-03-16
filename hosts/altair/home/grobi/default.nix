@@ -24,30 +24,30 @@ in
       #}
       {
         name = "DP-Desk";
-        outputs_connected = [ "DP-4-${PL2770H-DP}" ];
+        outputs_connected = [ "DP-1-${PL2770H-DP}" ];
         outputs_disconnected = [ "HDMI-0" ];
-        configure_single = "DP-4";
-        primary = "DP-4";
+        configure_single = "DP-1";
+        primary = "DP-1";
         atomic = false;
         execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 165"
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-1 --mode 1920x1080 --rate 165"
         ];
       }
       {
         name = "DP-Desk-Extended";
-        outputs_connected = [ "DP-4-${PL2770H-DP}" "HDMI-0" ];
+        outputs_connected = [ "DP-1-${PL2770H-DP}" "HDMI-0" ];
         outputs_disconnected = [ ];
-        configure_row = [ "DP-4" "HDMI-0" ];
-        primary = "DP-4";
+        configure_row = [ "DP-1" "HDMI-0" ];
+        primary = "DP-1";
         atomic = false;
         execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 165"
+          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-1 --mode 1920x1080 --rate 165"
         ];
       }
       {
         name = "DP-Simrig";
         outputs_connected = [ "DP-2-${PL3466WQ}" ];
-        outputs_disconnected = [ "DP-4-${PL2770H-DP}" ];
+        outputs_disconnected = [ "DP-1-${PL2770H-DP}" ];
         configure_single = "DP-2";
         primary = "DP-2";
         atomic = false;
@@ -62,7 +62,7 @@ in
       }
       {
         name = "Fallback";
-        configure_single = "DP-4";
+        configure_single = "DP-1";
       }
     ];
   };

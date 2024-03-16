@@ -12,7 +12,7 @@
     enableRedistributableFirmware = true;
   };
 
-  networking.interfaces.enp4s0.wakeOnLan = {
+  networking.interfaces.enp6s0.wakeOnLan = {
     enable = true;
     policy = [ "magic" ];
   };

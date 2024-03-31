@@ -14,9 +14,14 @@
     };
   };
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot = {
+    # Use the systemd-boot EFI boot loader.
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables = true;
+
+    # Update kernel from 6.1 because of amdgpu suspend-resuming issues
+    kernelPackages = pkgs.linuxPackages_latest;
+  };
 
   system.stateVersion = import ./state-version.nix;
 }

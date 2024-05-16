@@ -18,14 +18,14 @@ See [flake.nix](flake.nix) for more information like `system`.
 
 For further details refer to the [README of the basic Nix Configuration Flake][nixcfg].
 
-[ci]: https://github.com/christianharke/nixcfg-home/actions/workflows/ci.yml
-[ci-badge]: https://github.com/christianharke/nixcfg-home/actions/workflows/ci.yml/badge.svg
-[update]: https://github.com/christianharke/nixcfg-home/actions/workflows/update.yml
-[update-badge]: https://github.com/christianharke/nixcfg-home/actions/workflows/update.yml/badge.svg
+[ci]: https://github.com/rake5k/nixcfg-home/actions/workflows/ci.yml
+[ci-badge]: https://github.com/rake5k/nixcfg-home/actions/workflows/ci.yml/badge.svg
+[update]: https://github.com/rake5k/nixcfg-home/actions/workflows/update.yml
+[update-badge]: https://github.com/rake5k/nixcfg-home/actions/workflows/update.yml/badge.svg
 
 [home-manager]: https://github.com/nix-community/home-manager
 [nix-on-droid]: https://nix-community.github.io/nix-on-droid
 [nixos]: https://nixos.org/
 [nixos-badge]: https://img.shields.io/badge/NixOS-23.11-blue.svg?logo=NixOS&logoColor=white
-[nixcfg]: https://github.com/christianharke/nixcfg
+[nixcfg]: https://github.com/rake5k/nixcfg
 

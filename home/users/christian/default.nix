@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 
 with lib;
 
@@ -30,5 +30,9 @@ in
         xmonad.enable = programsCfg.xmonad.enable;
       };
     };
+
+    home.packages = with pkgs; [
+      synology-drive-client
+    ];
   };
 }

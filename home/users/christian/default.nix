@@ -21,6 +21,8 @@ in
   config = mkIf cfg.enable {
 
     custom = {
+      base.non-nixos.home-manager.autoUpgrade.flake = "github:rake5k/nixcfg-home";
+
       home = {
         firefox.enable = programsCfg.firefox.enable;
         git.enable = userCfg.git.enable;

@@ -7,7 +7,7 @@ let
 in
 
 {
-  custom.roles.desktop.grobi = {
+  custom.roles.desktop.xserver.grobi = {
     rules = [
       {
         name = "DP";

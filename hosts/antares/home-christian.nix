@@ -8,7 +8,10 @@
     home.enable = true;
 
     roles = {
-      desktop.enable = true;
+      desktop = {
+        enable = true;
+        xserver.enable = true;
+      };
       gaming.enable = true;
       multimedia.enable = true;
       web.enable = true;

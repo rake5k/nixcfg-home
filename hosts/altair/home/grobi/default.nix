@@ -11,7 +11,7 @@ let
 in
 
 {
-  custom.roles.desktop.grobi = {
+  custom.roles.desktop.xserver.grobi = {
     rules = [
       # Does not work with my KVM switch / graphics card combo, unfortunately:
       #{

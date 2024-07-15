@@ -16,6 +16,7 @@
     in
     with nixcfgLib;
     recursiveUpdate nixcfg {
+      name = "nixcfg-home";
 
       homeConfigurations = listToAttrs [
         (mkHome x86_64-linux "deck@sirius-a")
@@ -37,6 +38,10 @@
         (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
         (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage)
         (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)
+      ];
+
+      devShells = mkForEachSystem [
+        (mkDevShell "default" { flake = self; })
       ];
     };
 }

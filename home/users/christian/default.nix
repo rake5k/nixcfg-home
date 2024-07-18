@@ -29,8 +29,11 @@ in
         gtk.enable = rolesCfg.desktop.enable;
         office.cli.enable = rolesCfg.office.cli.enable;
         polybar.enable = programsCfg.polybar.enable;
+        ssh.enable = programsCfg.ssh.enable;
         xmonad.enable = programsCfg.xmonad.enable;
       };
+
+      roles.web.nextcloud-client.enable = true;
     };
 
     home.packages = with pkgs; [

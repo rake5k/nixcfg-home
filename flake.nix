@@ -38,13 +38,18 @@
         (mkNixOnDroid aarch64-linux "io")
       ];
 
-      checks = mkForEachSystem [
-        (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
-        (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
-        (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
-        (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage)
-        (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)
-      ];
+      checks = recursiveUpdate
+        nixcfg.checks
+        (mkForSystem aarch64-linux [
+          (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage)
+        ] // (
+          mkForSystem x86_64-linux [
+            (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
+            (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
+            (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
+            (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)
+          ]
+        ));
 
       devShells = mkForEachSystem [
         (mkDevShell "default" { flake = self; })

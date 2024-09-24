@@ -6,5 +6,9 @@
     ./configuration.nix
   ];
 
+  hardware = {
+    enableRedistributableFirmware = true;
+  };
+
   services.xserver.dpi = 144;
 }

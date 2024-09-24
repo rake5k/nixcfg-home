@@ -31,6 +31,7 @@
       nixosConfigurations = listToAttrs [
         (mkNixos x86_64-linux "altair")
         (mkNixos x86_64-linux "antares")
+        (mkNixos x86_64-linux "malmok")
         (mkNixos x86_64-linux "sirius-b")
       ];
 

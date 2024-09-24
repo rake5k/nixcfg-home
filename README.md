@@ -7,11 +7,13 @@
 ## Supported configurations
 
 * [NixOS][nixos]-managed
-  * `altair` (Personal desktop)
-  * `antares` (Spare gaming desktop)
+  * `altair` (personal desktop)
+  * `antares` (spare gaming desktop)
+  * `malmok` (legacy MacBook Pro)
   * `sirius-b` (Steam machine)
 * [Nix-on-Droid][nix-on-droid]-managed
   * `io` (Android mobile)
+* [Home Manager][home-manager]-managed
   * `sirius-a` (Steam Deck)
 
 See [flake.nix](flake.nix) for more information like `system`.
@@ -28,4 +30,3 @@ For further details refer to the [README of the basic Nix Configuration Flake][n
 [nixos]: https://nixos.org/
 [nixos-badge]: https://img.shields.io/badge/NixOS-23.11-blue.svg?logo=NixOS&logoColor=white
 [nixcfg]: https://github.com/rake5k/nixcfg
-

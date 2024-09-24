@@ -10,5 +10,8 @@
     enableRedistributableFirmware = true;
   };
 
-  services.xserver.dpi = 144;
+  services = {
+    fwupd.enable = true;
+    xserver.dpi = 144;
+  };
 }

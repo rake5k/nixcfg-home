@@ -13,6 +13,7 @@
     initrd = {
       availableKernelModules = [ "ohci_pci" "ehci_pci" "ahci" "firewire_ohci" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
       kernelModules = [ ];
+      luks.devices."root-crypt".device = "/dev/disk/by-uuid/2d1a2887-8cd9-45e5-a430-bf10931b8131";
     };
     kernelModules = [ "kvm-intel" "wl" ];
     extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];

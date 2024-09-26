@@ -6,6 +6,10 @@
     ./configuration.nix
   ];
 
+  boot.kernelParams = [
+    "video=LVDS-1:d"
+  ];
+
   hardware = {
     enableRedistributableFirmware = true;
   };

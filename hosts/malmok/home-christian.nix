@@ -1,3 +1,5 @@
+{ lib, ... }:
+
 {
   custom = {
     users.christian.enable = true;
@@ -6,11 +8,12 @@
     roles = {
       desktop = {
         enable = true;
-        xserver.enable = true;
+        xserver = {
+          enable = true;
+          grobi.enable = lib.mkForce false;
+        };
       };
-      web = {
-        enable = true;
-      };
+      web.enable = true;
     };
   };
 

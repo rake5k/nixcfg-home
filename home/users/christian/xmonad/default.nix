@@ -16,7 +16,7 @@ in
   };
 
   config = mkIf cfg.enable {
-    custom.programs.xmonad = {
+    custom.roles.desktop.xserver.xmonad = {
       autoruns = {
         "synology-drive" = 1;
         "firefox" = 3;

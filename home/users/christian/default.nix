@@ -28,8 +28,8 @@ in
         git.enable = userCfg.git.enable;
         gtk.enable = rolesCfg.desktop.enable;
         office.cli.enable = rolesCfg.office.cli.enable;
-        polybar.enable = programsCfg.polybar.enable;
-        xmonad.enable = programsCfg.xmonad.enable;
+        polybar.enable = rolesCfg.desktop.xserver.polybar.enable;
+        xmonad.enable = rolesCfg.desktop.xserver.xmonad.enable;
       };
     };
 

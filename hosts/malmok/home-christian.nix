@@ -11,6 +11,7 @@
         mobile.enable = true;
         xserver = {
           enable = true;
+          xmonad.lightweight = true;
           grobi.enable = lib.mkForce false;
         };
       };

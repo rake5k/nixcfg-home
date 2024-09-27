@@ -13,6 +13,10 @@
           grobi.enable = lib.mkForce false;
         };
       };
+      multimedia = {
+        enable = true;
+        converters.enable = true;
+      };
       web.enable = true;
     };
   };

@@ -8,6 +8,7 @@
     roles = {
       desktop = {
         enable = true;
+        mobile.enable = true;
         xserver = {
           enable = true;
           grobi.enable = lib.mkForce false;

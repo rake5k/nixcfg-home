@@ -23,19 +23,19 @@
     "/" = {
       device = "/dev/disk/by-label/root";
       fsType = "btrfs";
-      options = [ "subvol=@" ];
+      options = [ "subvol=@" "compress=lzo" "noatime" ];
     };
 
     "/home" = {
       device = "/dev/disk/by-label/root";
       fsType = "btrfs";
-      options = [ "subvol=@home" ];
+      options = [ "subvol=@home" "compress=lzo" "noatime" ];
     };
 
     "/nix" = {
       device = "/dev/disk/by-label/root";
       fsType = "btrfs";
-      options = [ "subvol=@nix" ];
+      options = [ "subvol=@nix" "compress=zstd:3" "noatime" ];
     };
 
     "/swap" = {

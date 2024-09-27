@@ -19,7 +19,11 @@
     };
   };
 
-  services.fwupd.enable = true;
+  services = {
+    fwupd.enable = true;
+    thermald.enable = true;
+    tlp.enable = true;
+  };
 
   system.stateVersion = import ./state-version.nix;
 }

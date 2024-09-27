@@ -395,11 +395,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1727403554,
-        "narHash": "sha256-0/lIVI+/83cJF3G87IivZ1KDT+ibh03MJP+0MNBBUyk=",
+        "lastModified": 1727426795,
+        "narHash": "sha256-+A8tqY3ueXGq5NtVX0CNwtObetfbfNPt/ke4wzMj2O8=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "e2f39450af54cc8166919e20bf4da282ed99d88d",
+        "rev": "b87834189160475965ce66d22cce7ae8961f457c",
         "type": "github"
       },
       "original": {

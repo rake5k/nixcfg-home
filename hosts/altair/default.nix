@@ -17,7 +17,5 @@
   # Update kernel from stable because of black screen on boot
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  services.fwupd.enable = true;
-
   system.stateVersion = import ./state-version.nix;
 }

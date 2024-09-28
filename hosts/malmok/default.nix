@@ -12,7 +12,6 @@
   };
 
   services = {
-    fwupd.enable = true;
     thermald.enable = true;
     tlp.enable = true;
   };

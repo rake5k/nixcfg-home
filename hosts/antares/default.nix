@@ -12,7 +12,5 @@
     };
   };
 
-  services.fwupd.enable = true;
-
   system.stateVersion = import ./state-version.nix;
 }

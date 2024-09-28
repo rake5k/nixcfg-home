@@ -11,7 +11,6 @@
         mobile.enable = true;
         xserver = {
           enable = true;
-          grobi.enable = lib.mkForce false;
           polybar.monitors.temperature-source = "/sys/devices/pci0000:00/0000:00:0c.0/0000:02:00.0/hwmon/hwmon4/temp1_input";
           xmonad.lightweight = true;
         };

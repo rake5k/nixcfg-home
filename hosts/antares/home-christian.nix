@@ -10,7 +10,10 @@
     roles = {
       desktop = {
         enable = true;
-        xserver.enable = true;
+        xserver = {
+          enable = true;
+          grobi.enable = true;
+        };
       };
       gaming.enable = true;
       multimedia.enable = true;

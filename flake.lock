@@ -392,14 +392,15 @@
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nur": "nur",
         "pre-commit-hooks": "pre-commit-hooks",
-        "systems": "systems_2"
+        "systems": "systems_2",
+        "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1727527291,
-        "narHash": "sha256-A64oEweYw5p9RreFnfgmWFLS+WRYreauLuSuAvYv1yo=",
+        "lastModified": 1727529210,
+        "narHash": "sha256-sTvTaeZI7qQRfODk6WEvQ2ig6yCp5eIzqZk6RbY7/eU=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "2fe0a91473712ee3dbcc8a9234ca47c9605b178e",
+        "rev": "c8d0f08dc54d6353cf37bbb878db7229171447c0",
         "type": "github"
       },
       "original": {
@@ -701,6 +702,22 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
+      }
+    },
+    "wallpapers": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1628696441,
+        "narHash": "sha256-6Xx2Sqz6Ed07tVj9bJ+pNI2hYdjBLPQYSUDbfE1TKXk=",
+        "owner": "rake5k",
+        "repo": "wallpapers",
+        "rev": "e8e0b8e7a9077ddc6a8b94bf7dc118e3fae65772",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "rake5k",
+        "repo": "wallpapers",
+        "type": "gitlab"
       }
     }
   },

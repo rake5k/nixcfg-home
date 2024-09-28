@@ -14,16 +14,8 @@
     };
   };
 
-  boot = {
-    # Use the systemd-boot EFI boot loader.
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
-
-    # Update kernel from stable because of black screen on boot
-    kernelPackages = pkgs.linuxPackages_latest;
-  };
+  # Update kernel from stable because of black screen on boot
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   services.fwupd.enable = true;
 

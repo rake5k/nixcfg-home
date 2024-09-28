@@ -12,14 +12,6 @@
     };
   };
 
-  boot = {
-    # Use the systemd-boot EFI boot loader.
-    loader = {
-      systemd-boot.enable = true;
-      efi.canTouchEfiVariables = true;
-    };
-  };
-
   services.fwupd.enable = true;
 
   system.stateVersion = import ./state-version.nix;

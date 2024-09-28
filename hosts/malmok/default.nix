@@ -7,13 +7,11 @@
     base.users = [ "christian" ];
 
     roles = {
-      desktop.enable = true;
+      desktop = {
+        enable = true;
+        mobile.enable = true;
+      };
     };
-  };
-
-  services = {
-    thermald.enable = true;
-    tlp.enable = true;
   };
 
   system.stateVersion = import ./state-version.nix;

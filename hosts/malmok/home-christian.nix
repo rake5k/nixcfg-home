@@ -11,7 +11,7 @@
         mobile.enable = true;
         xserver = {
           enable = true;
-          polybar.monitors.temperature-source = "/sys/devices/pci0000:00/0000:00:0c.0/0000:02:00.0/hwmon/hwmon4/temp1_input";
+          polybar.monitors.temperature-source = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp2_input";
           xmonad.lightweight = true;
         };
       };

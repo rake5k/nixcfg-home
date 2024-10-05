@@ -10,6 +10,8 @@
     enableRedistributableFirmware = true;
   };
 
+  nix.settings.max-jobs = 2;
+
   services = {
     fwupd.enable = true;
     xserver.dpi = 144;

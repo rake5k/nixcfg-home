@@ -20,6 +20,8 @@
     opengl.enable = true;
   };
 
+  nix.settings.max-jobs = 1;
+
   services.xserver = {
     deviceSection = ''
       Option "NoLogo" "1"

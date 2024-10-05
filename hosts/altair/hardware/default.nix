@@ -16,6 +16,8 @@
     policy = [ "magic" ];
   };
 
+  nix.settings.max-jobs = 4;
+
   services.xserver = {
     dpi = 96;
     videoDrivers = [

@@ -11,6 +11,8 @@
     enableRedistributableFirmware = true;
   };
 
+  nix.settings.max-jobs = 4;
+
   powerManagement.cpuFreqGovernor = "performance";
 
   services.xserver = {

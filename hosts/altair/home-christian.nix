@@ -11,10 +11,7 @@
       containers.enable = true;
       desktop = {
         enable = true;
-        xserver = {
-          enable = true;
-          grobi.enable = true;
-        };
+        xserver. enable = true;
       };
       gaming.enable = true;
       graphics.enable = true;

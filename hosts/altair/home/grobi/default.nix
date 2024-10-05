@@ -6,12 +6,12 @@ let
   PL2770H-DP = "IVM-26206-68-PL2770H-";
   PL3466WQ = "IVM-30248-0-PL3466WQ-1174031001065";
 
-  updateWallpapers = "${lib.getExe pkgs.feh} --no-fehbg --bg-fill --randomize ${config.custom.roles.desktop.wallpapersDir}";
-
 in
 
 {
   custom.roles.desktop.xserver.grobi = {
+    enable = true;
+    fallbackOutput = "DP-1";
     rules = [
       # Does not work with my KVM switch / graphics card combo, unfortunately:
       #{
@@ -59,10 +59,6 @@ in
         configure_single = "HDMI-0";
         primary = "HDMI-0";
         atomic = false;
-      }
-      {
-        name = "Fallback";
-        configure_single = "DP-1";
       }
     ];
   };

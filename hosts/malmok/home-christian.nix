@@ -1,6 +1,10 @@
 { lib, ... }:
 
 {
+  imports = [
+    ./home/grobi
+  ];
+
   custom = {
     users.christian.enable = true;
     home.enable = true;

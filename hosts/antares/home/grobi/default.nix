@@ -8,6 +8,8 @@ in
 
 {
   custom.roles.desktop.xserver.grobi = {
+    enable = true;
+    fallbackOutput = "DP-1";
     rules = [
       {
         name = "DP";
@@ -26,10 +28,6 @@ in
         configure_single = "HDMI-0";
         primary = "HDMI-0";
         atomic = true;
-      }
-      {
-        name = "Fallback";
-        configure_single = "DP-1";
       }
     ];
   };

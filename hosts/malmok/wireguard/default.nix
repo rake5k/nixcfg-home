@@ -2,6 +2,8 @@
 
 let
 
+  interfaceName = "wg0";
+
   key = "malmok/wg-key";
   psk = "malmok/wg-psk";
 
@@ -14,7 +16,7 @@ in
   ];
 
   networking.wg-quick.interfaces = {
-    wg0 = {
+    "${interfaceName}" = {
       address = [
         "10.0.10.2/32"
       ];
@@ -36,5 +38,10 @@ in
         }
       ];
     };
+  };
+
+  systemd.services."wg-quick-${interfaceName}".serviceConfig = {
+    Restart = "on-failure";
+    RestartSec = 5;
   };
 }

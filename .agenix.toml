@@ -44,3 +44,6 @@ groups = [ "christian" ]
 glob = "secrets/nix-on-droid/*.age"
 groups = [ "nix-on-droid" ]
 
+[[paths]]
+glob = "secrets/nixos/malmok/*.age"
+identities = [ "malmok-root" ]

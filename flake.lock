@@ -396,17 +396,35 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1728121587,
-        "narHash": "sha256-wQzRUdIegg1sFRQiBn4GiijIEH0lj+ROdzWGvL+o5rM=",
+        "lastModified": 1728251707,
+        "narHash": "sha256-0263MRzLA8ki34seAujIckusphdMYsAErFb35ICEh3U=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "c144f7ea7e7d0f57898b2c0cccee6d46e5096d78",
+        "rev": "fc93d3a6efc8514e6fb7a31979c2f0f55806fbcb",
         "type": "github"
       },
       "original": {
         "owner": "rake5k",
         "repo": "nixcfg",
         "type": "github"
+      }
+    },
+    "nixcfg-secrets": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1728215890,
+        "narHash": "sha256-OseQjMmSSM8gGg/HXjxmeKoW39rWjaicjPLrxT+UEiQ=",
+        "ref": "main",
+        "rev": "c8c1251c405df3be3dcead18c18e944dec850097",
+        "shallow": true,
+        "type": "git",
+        "url": "ssh://git@code.harke.ch/christian/nixcfg-secrets.git"
+      },
+      "original": {
+        "ref": "main",
+        "shallow": true,
+        "type": "git",
+        "url": "ssh://git@code.harke.ch/christian/nixcfg-secrets.git"
       }
     },
     "nixgl": {
@@ -654,6 +672,7 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "nixcfg": "nixcfg",
+        "nixcfg-secrets": "nixcfg-secrets",
         "nixpkgs": "nixpkgs_2",
         "pre-commit-hooks": "pre-commit-hooks_2"
       }

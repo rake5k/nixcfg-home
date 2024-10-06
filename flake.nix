@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixcfg.url = "github:rake5k/nixcfg";
+    nixcfg-secrets = {
+      url = "git+ssh://git@code.harke.ch/christian/nixcfg-secrets.git?ref=main&shallow=1";
+      flake = false;
+    };
     flake-utils.url = "github:numtide/flake-utils";
     pre-commit-hooks = {
       url = "github:cachix/pre-commit-hooks.nix";

@@ -33,11 +33,11 @@ nix-on-droid = [
 ]
 
 [[paths]]
-glob = "secrets/*.age"
+glob = "secrets/nixos/*.age"
 groups = [ "root" ]
 
 [[paths]]
-glob = "secrets/christian/*.age"
+glob = "secrets/home/christian/*.age"
 groups = [ "christian" ]
 
 [[paths]]

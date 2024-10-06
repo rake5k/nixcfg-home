@@ -1,0 +1,4 @@
+[submodule "secrets"]
+	path = secrets
+	url = git@code.harke.ch:christian/nixcfg-secrets.git
+	branch = main

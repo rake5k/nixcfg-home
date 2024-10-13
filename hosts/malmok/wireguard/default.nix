@@ -15,28 +15,31 @@ in
     psk
   ];
 
-  networking.wg-quick.interfaces = {
-    "${interfaceName}" = {
-      address = [
-        "10.0.10.2/32"
-      ];
-      dns = [
-        "10.0.10.1"
-      ];
-      privateKeyFile = config.age.secrets."${key}".path;
+  networking = {
+    domain = "home.local";
+    wg-quick.interfaces = {
+      "${interfaceName}" = {
+        address = [
+          "10.0.10.2/32"
+        ];
+        dns = [
+          "10.0.10.1"
+        ];
+        privateKeyFile = config.age.secrets."${key}".path;
 
-      peers = [
-        {
-          publicKey = "TwJwav0wXD9RdE0K2RkBd+Y8yfDkzkw3A4ZoBOOpv2M=";
-          presharedKeyFile = config.age.secrets."${psk}".path;
-          allowedIPs = [
-            "::/0"
-            "0.0.0.0/0"
-          ];
-          endpoint = "ras.harke.ch:51820";
-          persistentKeepalive = 25;
-        }
-      ];
+        peers = [
+          {
+            publicKey = "TwJwav0wXD9RdE0K2RkBd+Y8yfDkzkw3A4ZoBOOpv2M=";
+            presharedKeyFile = config.age.secrets."${psk}".path;
+            allowedIPs = [
+              "::/0"
+              "0.0.0.0/0"
+            ];
+            endpoint = "ras.harke.ch:51820";
+            persistentKeepalive = 25;
+          }
+        ];
+      };
     };
   };
 

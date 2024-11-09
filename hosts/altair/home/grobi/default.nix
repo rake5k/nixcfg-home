@@ -1,8 +1,7 @@
-{ config, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 let
 
-  PL2770H-HDMI = "IVM-26205-68-PL2770H-";
   PL2770H-DP = "IVM-26206-68-PL2770H-";
   PL3466WQ = "IVM-30248-0-PL3466WQ-1174031001065";
 
@@ -35,9 +34,15 @@ in
       }
       {
         name = "DP-Desk-Extended";
-        outputs_connected = [ "DP-1-${PL2770H-DP}" "HDMI-0" ];
+        outputs_connected = [
+          "DP-1-${PL2770H-DP}"
+          "HDMI-0"
+        ];
         outputs_disconnected = [ ];
-        configure_row = [ "DP-1" "HDMI-0" ];
+        configure_row = [
+          "DP-1"
+          "HDMI-0"
+        ];
         primary = "DP-1";
         atomic = false;
         execute_after = [

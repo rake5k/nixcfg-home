@@ -1,7 +1,5 @@
 {
-  imports = [
-    ./home/grobi
-  ];
+  imports = [ ./home/grobi ];
 
   custom = {
     users.christian.enable = true;

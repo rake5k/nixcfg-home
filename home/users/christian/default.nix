@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 with lib;
 
@@ -33,8 +38,6 @@ in
       };
     };
 
-    home.packages = with pkgs; [
-      synology-drive-client
-    ];
+    home.packages = with pkgs; [ synology-drive-client ];
   };
 }

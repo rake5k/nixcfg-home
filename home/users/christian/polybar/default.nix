@@ -15,7 +15,5 @@ in
     };
   };
 
-  config = mkIf cfg.enable {
-    custom.roles.homeage.secrets = [ "owm-key" ];
-  };
+  config = mkIf cfg.enable { custom.roles.homeage.secrets = [ "owm-key" ]; };
 }

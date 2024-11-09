@@ -15,7 +15,5 @@ in
     };
   };
 
-  config = mkIf cfg.enable {
-    custom.programs.firefox.homepage = "https://dash.harke.ch/";
-  };
+  config = mkIf cfg.enable { custom.programs.firefox.homepage = "https://dash.harke.ch/"; };
 }

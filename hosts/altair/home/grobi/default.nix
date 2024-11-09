@@ -28,9 +28,7 @@ in
         configure_single = "DP-1";
         primary = "DP-1";
         atomic = false;
-        execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-1 --mode 1920x1080 --rate 165"
-        ];
+        execute_after = [ "${pkgs.xorg.xrandr}/bin/xrandr --output DP-1 --mode 1920x1080 --rate 165" ];
       }
       {
         name = "DP-Desk-Extended";
@@ -45,9 +43,7 @@ in
         ];
         primary = "DP-1";
         atomic = false;
-        execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-1 --mode 1920x1080 --rate 165"
-        ];
+        execute_after = [ "${pkgs.xorg.xrandr}/bin/xrandr --output DP-1 --mode 1920x1080 --rate 165" ];
       }
       {
         name = "DP-Simrig";

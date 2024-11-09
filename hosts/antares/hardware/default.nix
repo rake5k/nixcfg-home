@@ -17,8 +17,6 @@
 
   services.xserver = {
     dpi = 96;
-    videoDrivers = [
-      "nvidia"
-    ];
+    videoDrivers = [ "nvidia" ];
   };
 }

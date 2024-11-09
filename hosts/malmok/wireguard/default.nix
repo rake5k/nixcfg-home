@@ -19,12 +19,8 @@ in
     domain = "home.local";
     wg-quick.interfaces = {
       "${interfaceName}" = {
-        address = [
-          "10.0.10.2/32"
-        ];
-        dns = [
-          "10.0.10.1"
-        ];
+        address = [ "10.0.10.2/32" ];
+        dns = [ "10.0.10.1" ];
         privateKeyFile = config.age.secrets."${key}".path;
 
         peers = [

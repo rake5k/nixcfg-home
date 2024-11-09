@@ -18,9 +18,7 @@ in
         configure_single = "DP-1";
         primary = "DP-1";
         atomic = true;
-        execute_after = [
-          "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 60"
-        ];
+        execute_after = [ "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 60" ];
       }
       {
         name = "HDMI";

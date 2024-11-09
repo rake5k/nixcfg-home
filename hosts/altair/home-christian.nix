@@ -1,7 +1,5 @@
 {
-  imports = [
-    ./home/grobi
-  ];
+  imports = [ ./home/grobi ];
 
   custom = {
     users.christian.enable = true;
@@ -11,7 +9,7 @@
       containers.enable = true;
       desktop = {
         enable = true;
-        xserver. enable = true;
+        xserver.enable = true;
       };
       gaming.enable = true;
       graphics.enable = true;

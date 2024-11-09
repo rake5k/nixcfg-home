@@ -1,4 +1,9 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 let
 
@@ -13,16 +18,25 @@ in
     rules = [
       {
         name = "DP-Desk-Extended";
-        outputs_connected = [ "DP-0-${PL2770H}" "LVDS-0" ];
+        outputs_connected = [
+          "DP-0-${PL2770H}"
+          "LVDS-0"
+        ];
         outputs_disconnected = [ ];
-        configure_row = [ "DP-0" "LVDS-0" ];
+        configure_row = [
+          "DP-0"
+          "LVDS-0"
+        ];
         primary = "DP-0";
         atomic = false;
       }
       {
         name = "Single";
         outputs_connected = [ "LVDS-0" ];
-        outputs_disconnected = [ "DP-0" "DP-1" ];
+        outputs_disconnected = [
+          "DP-0"
+          "DP-1"
+        ];
         configure_single = "LVDS-0";
       }
     ];

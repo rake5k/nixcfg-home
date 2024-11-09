@@ -17,7 +17,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixcfg, ... } @ inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      nixcfg,
+      ...
+    }@inputs:
     let
       nixcfgLib = nixcfg.lib { inherit inputs; };
 
@@ -28,9 +34,7 @@
     recursiveUpdate nixcfg {
       name = "nixcfg-home";
 
-      homeConfigurations = listToAttrs [
-        (mkHome x86_64-linux "deck@sirius-a")
-      ];
+      homeConfigurations = listToAttrs [ (mkHome x86_64-linux "deck@sirius-a") ];
 
       nixosConfigurations = listToAttrs [
         (mkNixos x86_64-linux "altair")
@@ -39,26 +43,19 @@
         (mkNixos x86_64-linux "sirius-b")
       ];
 
-      nixOnDroidConfigurations = listToAttrs [
-        (mkNixOnDroid aarch64-linux "io")
-      ];
+      nixOnDroidConfigurations = listToAttrs [ (mkNixOnDroid aarch64-linux "io") ];
 
-      checks = recursiveUpdate
-        nixcfg.checks
-        (mkForSystem aarch64-linux [
-          (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage)
-        ] // (
-          mkForSystem x86_64-linux [
-            (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
-            (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
-            (mkBuild "build" self.nixosConfigurations.malmok.config.system.build.toplevel)
-            (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
-            (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)
-          ]
-        ));
+      checks = recursiveUpdate nixcfg.checks (
+        mkForSystem aarch64-linux [ (mkBuild "build" self.nixOnDroidConfigurations.io.activationPackage) ]
+        // (mkForSystem x86_64-linux [
+          (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
+          (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
+          (mkBuild "build" self.nixosConfigurations.malmok.config.system.build.toplevel)
+          (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
+          (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)
+        ])
+      );
 
-      devShells = mkForEachSystem [
-        (mkDevShell "default" { flake = self; })
-      ];
+      devShells = mkForEachSystem [ (mkDevShell "default" { flake = self; }) ];
     };
 }

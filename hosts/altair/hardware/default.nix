@@ -20,8 +20,6 @@
 
   services.xserver = {
     dpi = 96;
-    videoDrivers = [
-      "admgpu"
-    ];
+    videoDrivers = [ "admgpu" ];
   };
 }

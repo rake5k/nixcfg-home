@@ -32,4 +32,9 @@
   };
 
   home.stateVersion = import ./state-version.nix;
+
+  services.polybar.config."module/xwindow" = {
+    label = lib.mkForce "%class%";
+    label-maxlen = lib.mkForce 12;
+  };
 }

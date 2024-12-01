@@ -20,7 +20,10 @@ in
     wg-quick.interfaces = {
       "${interfaceName}" = {
         address = [ "10.0.10.2/32" ];
-        dns = [ "10.0.10.1" ];
+        dns = [
+          "10.0.10.1"
+          "home.local"
+        ];
         privateKeyFile = config.age.secrets."${key}".path;
 
         peers = [

@@ -9,6 +9,7 @@
 
   hardware = {
     enableRedistributableFirmware = true;
+    nvidia.open = false;
   };
 
   nix.settings.max-jobs = 4;

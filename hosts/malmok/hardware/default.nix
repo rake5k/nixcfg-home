@@ -14,8 +14,8 @@
 
   hardware = {
     enableRedistributableFirmware = true;
+    graphics.enable = true;
     nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_340;
-    opengl.enable = true;
   };
 
   nix.settings.max-jobs = 1;

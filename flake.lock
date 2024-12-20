@@ -434,11 +434,11 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1734575139,
-        "narHash": "sha256-+BAE3i5xbSQtF+Ji4VhQcIFPBl2n0q8E34NGDdFYfx8=",
+        "lastModified": 1734661179,
+        "narHash": "sha256-CCr+aXmSBSMxETgXurtLEQ5Tj40gRyY+JkR50v9lVo0=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "d6560732fa4db5581dcbf3fe6113f20546cf1649",
+        "rev": "e91ec5e6c633883ec30cce71962ecd0c65e911e8",
         "type": "github"
       },
       "original": {
@@ -664,11 +664,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1734575082,
-        "narHash": "sha256-fL1fCy/GizxKbCa8hsQDN9KkhjLktkRHxURtZtHom10=",
+        "lastModified": 1734660568,
+        "narHash": "sha256-BYu52hlHSFF+vpkfD60ziYXTtRf0DzH0ruUZVFq0D0U=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "70d50c273b0b07fb617a19704a676b012a5c8442",
+        "rev": "947f32441285c3af27669a98c39bb8b0b8bc35c7",
         "type": "github"
       },
       "original": {

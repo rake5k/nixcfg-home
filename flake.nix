@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixcfg.url = "github:rake5k/nixcfg";
+    nixcfg.url = "github:rake5k/nixcfg/disko";
     nixcfg-secrets = {
       url = "git+ssh://git@code.harke.ch/christian/nixcfg-secrets.git?ref=main&shallow=1";
       flake = false;
@@ -39,6 +39,7 @@
       nixosConfigurations = listToAttrs [
         (mkNixos x86_64-linux "altair")
         (mkNixos x86_64-linux "antares")
+        (mkNixos x86_64-linux "hyperion")
         (mkNixos x86_64-linux "malmok")
         (mkNixos x86_64-linux "sirius-b")
       ];
@@ -50,6 +51,7 @@
         // (mkForSystem x86_64-linux [
           (mkBuild "build" self.nixosConfigurations.altair.config.system.build.toplevel)
           (mkBuild "build" self.nixosConfigurations.antares.config.system.build.toplevel)
+          (mkBuild "build" self.nixosConfigurations.hyperion.config.system.build.toplevel)
           (mkBuild "build" self.nixosConfigurations.malmok.config.system.build.toplevel)
           (mkBuild "build" self.nixosConfigurations.sirius-b.config.system.build.toplevel)
           (mkBuild "build-deck@sirius-a" self.homeConfigurations."deck@sirius-a".activationPackage)

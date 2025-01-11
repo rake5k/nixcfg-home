@@ -22,6 +22,12 @@ in
         openFirewall = true;
       };
 
+      plex = {
+        enable = true;
+        dataDir = "/data/plex";
+        openFirewall = true;
+      };
+
       syncthing = {
         enable = true;
         dataDir = "/data/syncthing";
@@ -77,5 +83,30 @@ in
         };
       };
     };
+
+    virtualisation.oci-containers =
+      let
+        workdirBase = "/data/containers";
+      in
+      {
+        containers = {
+          threadfin = {
+            image = "fyb3roptik/threadfin:1.2.21";
+            ports = [
+              "34400:34400"
+            ];
+            environment = {
+              PUID = "1001";
+              PGID = "1001";
+              TZ = "Europe/Zurich";
+            };
+            volumes = [
+              "./data/conf:/home/threadfin/conf"
+              "./data/playlists:/home/threadfin/playlists"
+            ];
+            workdir = "${workdirBase}/threadfin";
+          };
+        };
+      };
   };
 }

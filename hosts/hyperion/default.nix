@@ -2,7 +2,10 @@
   imports = [ ./hardware ];
 
   custom = {
-    roles.impermanence.enable = true;
+    roles = {
+      nas.enable = true;
+      impermanence.enable = true;
+    };
   };
 
   users.users = {

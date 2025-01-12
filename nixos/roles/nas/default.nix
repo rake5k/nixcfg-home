@@ -24,7 +24,7 @@ in
 
       plex = {
         enable = true;
-        dataDir = "/data/plex";
+        dataDir = "/var/lib/plex";
         openFirewall = true;
       };
 

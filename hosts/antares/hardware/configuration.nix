@@ -74,6 +74,12 @@
     };
   };
 
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "weekly";
+    fileSystems = [ "/" ];
+  };
+
   swapDevices = [
     {
       device = "/swap/swapfile";

@@ -5,7 +5,6 @@
   config,
   lib,
   modulesPath,
-  pkgs,
   ...
 }:
 
@@ -79,6 +78,12 @@
         "dmask=0022"
       ];
     };
+  };
+
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "weekly";
+    fileSystems = [ "/" ];
   };
 
   swapDevices = [

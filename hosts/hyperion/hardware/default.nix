@@ -30,4 +30,9 @@
   environment.systemPackages = with pkgs; [
     openseachest
   ];
+
+  networking.interfaces.enp4s0.wakeOnLan = {
+    enable = true;
+    policy = [ "magic" ];
+  };
 }

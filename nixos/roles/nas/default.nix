@@ -30,7 +30,7 @@ in
 
       syncthing = {
         enable = true;
-        dataDir = "/data/syncthing";
+        dataDir = "/var/lib/syncthing";
         guiAddress = "0.0.0.0:8384";
         openDefaultPorts = true;
         settings = {
@@ -70,14 +70,14 @@ in
                 config.services.syncthing.settings.devices.malmok.name
                 config.services.syncthing.settings.devices.pixel-7a.name
               ];
-              path = "~/FreeTube";
+              path = "/data/syncthing/FreeTube";
             };
             RetroDeck = {
               enable = true;
               devices = [
                 config.services.syncthing.settings.devices.sirius-a.name
               ];
-              path = "~/RetroDeck";
+              path = "/data/syncthing/RetroDeck";
             };
           };
         };

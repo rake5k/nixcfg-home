@@ -144,22 +144,17 @@
 
   boot = {
     kernelParams = [
-      # TODO: https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Acquire_swap_file_offset
-      # probably `btrfs inspect-internal map-swapfile -r /swap`
-      #"resume_offset=533760"
+      # https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate#Acquire_swap_file_offset
+      # use: `btrfs inspect-internal map-swapfile -r /swap/swapfile`
+      "resume_offset=533760"
     ];
     resumeDevice = "/dev/disk/by-label/nixos";
   };
 
-  fileSystems."/persist".neededForBoot = true;
   fileSystems."/var/log".neededForBoot = true;
 
-  services.btrfs.autoScrub = {
-    enable = true;
-    interval = "monthly";
-    fileSystems = [
-      "/"
-      "/data"
-    ];
-  };
+  services.btrfs.autoScrub.fileSystems = [
+    "/"
+    "/data"
+  ];
 }

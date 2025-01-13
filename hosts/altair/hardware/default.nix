@@ -5,14 +5,7 @@
     ./configuration.nix
   ];
 
-  hardware = {
-    enableRedistributableFirmware = true;
-  };
-
-  networking.interfaces.enp6s0.wakeOnLan = {
-    enable = true;
-    policy = [ "magic" ];
-  };
+  hardware.enableRedistributableFirmware = true;
 
   nix.settings.max-jobs = 4;
 

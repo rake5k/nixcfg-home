@@ -4,7 +4,15 @@
   imports = [ ./hardware ];
 
   custom = {
-    base.users = [ "christian" ];
+    base = {
+      users = [ "christian" ];
+      system = {
+        network.wol = {
+          enable = true;
+          interface = "enp6s0";
+        };
+      };
+    };
 
     roles = {
       android.enable = true;

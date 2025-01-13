@@ -7,6 +7,10 @@
     base = {
       users = [ "christian" ];
       system = {
+        luks = {
+          enable = true;
+          remoteUnlock = true;
+        };
         network.wol = {
           enable = true;
           interface = "enp6s0";

@@ -33,6 +33,11 @@
                     "nixos"
                     "-f"
                   ];
+                  postCreateHook = ''
+                    mount -t btrfs /dev/disk/by-label/nixos /mnt
+                    btrfs subvolume snapshot -r /mnt /mnt/root-blank
+                    umount /mnt
+                  '';
                   subvolumes = {
                     "/root" = {
                       mountpoint = "/";

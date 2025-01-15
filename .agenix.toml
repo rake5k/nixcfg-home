@@ -1,6 +1,7 @@
 [identities]
 altair-christian = "age15fjlypp3dt6jjgctv3dh2alywmpkdamn20srnsr0q9vr3nznesmqt9gp2u"
 altair-root = "age1uzy4gk7pmmt2nskdqa43t5sjf4zyddj6wl22vjct9eh2hn59rgasnhflwf"
+hyperion-root = "age1ry8rjw3awg630e50xcmkql5jwc3s3q9syh93n0lxzlmd8mvk6c6qns5jy2"
 io-nix-on-droid = "age1vt2g4gya2pz73epwc0zcqcwr44t5u27mnptpswuxjpfvxgkrwqeq9rsg8d"
 malmok-christian = "age1xevq6ttjadu7csmnxcdze95qvcq78kk5ce54ptutenj96rw4e9fsu6el7w"
 malmok-root = "age19mcppvd32wxe0qdzkc9gh9hdz0sxz0k6yy8w6fnfaupas7dp0qdqr36wvk"
@@ -12,6 +13,7 @@ sirius-root = "age1ysardqq0elh2l9gxf8aune4kcjkzr8m34pxja4ctfexv7wd65g3srdy4rx"
 all = [
   "altair-christian",
   "altair-root",
+  "hyperion-root",
   "io-nix-on-droid",
   "malmok-christian",
   "malmok-root",
@@ -20,6 +22,7 @@ all = [
 ]
 root = [
   "altair-root",
+  "hyperion-root",
   "malmok-root",
   "sirius-root",
 ]
@@ -43,6 +46,10 @@ groups = [ "christian" ]
 [[paths]]
 glob = "secrets/nix-on-droid/*.age"
 groups = [ "nix-on-droid" ]
+
+[[paths]]
+glob = "secrets/nixos/hyperion/*.age"
+identities = [ "hyperion-root" ]
 
 [[paths]]
 glob = "secrets/nixos/malmok/*.age"

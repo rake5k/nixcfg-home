@@ -504,15 +504,16 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1736975524,
-        "narHash": "sha256-v8LBkpjXUDN1W760wc06p7yWscbOaLkVGTNeNjGgGKs=",
+        "lastModified": 1736985580,
+        "narHash": "sha256-LoOu3AKKP98EDqGkBwg5mTdMxRa/f5KLvO6Y5F3acxc=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "35d988c9b936ec5eaf3362d642dca3fa4d33f536",
+        "rev": "c366d3ea080f0fcbc212a690aa2696ae130137ce",
         "type": "github"
       },
       "original": {
         "owner": "rake5k",
+        "ref": "add-git",
         "repo": "nixcfg",
         "type": "github"
       }

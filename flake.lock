@@ -504,11 +504,11 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1737160327,
-        "narHash": "sha256-XihRpBXZOimBdO24fUlxhoASIEWzVTJKaO6gnTM1h/E=",
+        "lastModified": 1737332811,
+        "narHash": "sha256-5SPza78uOe8sxrFkKh82XnMsY15E3Bs2IQcLfD+MVH0=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "f1ac997ad79e9dd56a54dfcfc1f8e1abc88a0485",
+        "rev": "052757fc73b759d7614c8ecc62d6cb872a315c9d",
         "type": "github"
       },
       "original": {

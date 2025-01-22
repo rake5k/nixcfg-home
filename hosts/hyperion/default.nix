@@ -1,8 +1,12 @@
+{ lib, ... }:
+
 {
   imports = [ ./hardware ];
 
   custom = {
+    base.system.boot.secureBoot = lib.mkForce false;
     base.system.network.wol.interface = "enp4s0";
+
     roles.nas.enable = true;
   };
 

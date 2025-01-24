@@ -1,10 +1,11 @@
-{ config, pkgs, ... }:
-
 {
   imports = [ ./hardware ];
 
   custom = {
-    base.users = [ "christian" ];
+    base.users = [
+      "root"
+      "christian"
+    ];
 
     roles = {
       steambox.enable = true;

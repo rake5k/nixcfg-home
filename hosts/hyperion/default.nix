@@ -2,7 +2,10 @@
   imports = [ ./hardware ];
 
   custom = {
-    base.system.network.wol.interface = "enp4s0";
+    base = {
+      users = [ "root" ];
+      system.network.wol.interface = "enp4s0";
+    };
     roles.nas.enable = true;
   };
 

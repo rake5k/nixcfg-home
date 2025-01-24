@@ -522,10 +522,10 @@
     "nixcfg-secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1737584196,
-        "narHash": "sha256-vOdFvw9d24mJFkzdxzo5w4KPlGr5qKqO7ni2uVdEv1Y=",
+        "lastModified": 1737734036,
+        "narHash": "sha256-CkdUr/xpwsPA05oTh9ESz8xujQXdxHqXODHL6NayglQ=",
         "ref": "main",
-        "rev": "f00bd2d1154ae79be8923d03fb295d59384aef7e",
+        "rev": "96d9a9c029b5f95a19c1b4df28b0b8c91a6ca8e5",
         "shallow": true,
         "type": "git",
         "url": "ssh://git@code.harke.ch/christian/nixcfg-secrets.git"

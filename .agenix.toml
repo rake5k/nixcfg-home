@@ -1,56 +1,46 @@
 [identities]
-altair-christian = "age15fjlypp3dt6jjgctv3dh2alywmpkdamn20srnsr0q9vr3nznesmqt9gp2u"
-altair-root = "age1uzy4gk7pmmt2nskdqa43t5sjf4zyddj6wl22vjct9eh2hn59rgasnhflwf"
-hyperion-root = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJLSEMUTH+nZ9APeH5FbX0YtwmGFxhaXFfxRwrto0Kfk"
-io-nix-on-droid = "age1vt2g4gya2pz73epwc0zcqcwr44t5u27mnptpswuxjpfvxgkrwqeq9rsg8d"
-malmok-christian = "age1xevq6ttjadu7csmnxcdze95qvcq78kk5ce54ptutenj96rw4e9fsu6el7w"
-malmok-root = "age19mcppvd32wxe0qdzkc9gh9hdz0sxz0k6yy8w6fnfaupas7dp0qdqr36wvk"
-sirius-christian = "age1z8dp8he50ksaz0zqg6tasmfmmlgplsva9jeh4lmvu72wx82l6c5qhdmz7y"
-sirius-root = "age1ysardqq0elh2l9gxf8aune4kcjkzr8m34pxja4ctfexv7wd65g3srdy4rx"
-
+home-christian = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGP4EY0bKOAuEMG34lZ4cAyGpGRcbopH9GRmgi3wCf6b"
+nixos-altair = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEqT+eVFO2Rb6Il8GndgygdOKOhVa0TLp/TTnkm0LDLQ"
+nixos-hyperion = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJLSEMUTH+nZ9APeH5FbX0YtwmGFxhaXFfxRwrto0Kfk"
+nixos-malmok = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPVGn5uLSxWyFAgW0Q8l8B5XXsn52b5utV06zthGZkuD"
+nixos-sirius-b = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA2PKuhWG5IQgiSzor/foQg3LgmrCvYKO80y/5UUzMb4"
+nix-on-droid-io = "age1vt2g4gya2pz73epwc0zcqcwr44t5u27mnptpswuxjpfvxgkrwqeq9rsg8d"
 
 [groups]
 all = [
-  "altair-christian",
-  "altair-root",
-  "hyperion-root",
-  "io-nix-on-droid",
-  "malmok-christian",
-  "malmok-root",
-  "sirius-christian",
-  "sirius-root",
+  "home-christian",
+  "nixos-altair",
+  "nixos-hyperion",
+  "nixos-malmok",
+  "nixos-sirius-b",
+  "nix-on-droid-io",
 ]
-root = [
-  "altair-root",
-  "hyperion-root",
-  "malmok-root",
-  "sirius-root",
-]
-christian = [
-  "altair-christian",
-  "malmok-christian",
-  "sirius-christian",
+nixos = [
+  "nixos-altair",
+  "nixos-hyperion",
+  "nixos-malmok",
+  "nixos-sirius-b",
 ]
 nix-on-droid = [
-  "io-nix-on-droid",
+  "nix-on-droid-io",
 ]
 
 [[paths]]
 glob = "secrets/nixos/*.age"
-groups = [ "root" ]
+groups = [ "nixos" ]
 
 [[paths]]
 glob = "secrets/home/christian/*.age"
-groups = [ "christian" ]
+identities = [ "home-christian" ]
+
+[[paths]]
+glob = "secrets/nixos/hyperion/*.age"
+identities = [ "nixos-hyperion" ]
+
+[[paths]]
+glob = "secrets/nixos/malmok/*.age"
+identities = [ "nixos-malmok" ]
 
 [[paths]]
 glob = "secrets/nix-on-droid/*.age"
 groups = [ "nix-on-droid" ]
-
-[[paths]]
-glob = "secrets/nixos/hyperion/*.age"
-identities = [ "hyperion-root" ]
-
-[[paths]]
-glob = "secrets/nixos/malmok/*.age"
-identities = [ "malmok-root" ]

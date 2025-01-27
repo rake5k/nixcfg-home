@@ -20,6 +20,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    cudaPackages.cudatoolkit
     openseachest
   ];
 

@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   imports = [ ./hardware ];
 
@@ -8,6 +10,8 @@
     };
     roles.nas.enable = true;
   };
+
+  environment.systemPackages = [ pkgs.ffmpeg-full ];
 
   users.users = {
     admin = {

@@ -496,7 +496,6 @@
         "nix-index-database": "nix-index-database",
         "nix-on-droid": "nix-on-droid",
         "nixgl": "nixgl",
-        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
         "nur": "nur",
@@ -505,11 +504,11 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1737929274,
-        "narHash": "sha256-dzKCaDDByMlR7Mv4BHvFfg0L8nkx2oheRTXVjiFfrqA=",
+        "lastModified": 1738092664,
+        "narHash": "sha256-JJnny8f3BVXGTyVqs7RX0yQA0Vr/rB0rPXHp9IWrkA0=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "d9bb4e6fe0159e51634eab08d79124d181a48c00",
+        "rev": "eb4fe43de0341c251550e3d3a123a2628f433d13",
         "type": "github"
       },
       "original": {
@@ -558,22 +557,6 @@
       "original": {
         "owner": "nix-community",
         "repo": "nixGL",
-        "type": "github"
-      }
-    },
-    "nixos-hardware": {
-      "locked": {
-        "lastModified": 1737590910,
-        "narHash": "sha256-qM/y6Dtpu9Wmf5HqeZajQdn+cS0aljdYQQQnrvx+LJE=",
-        "owner": "NixOS",
-        "repo": "nixos-hardware",
-        "rev": "9368027715d8dde4b84c79c374948b5306fdd2db",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "master",
-        "repo": "nixos-hardware",
         "type": "github"
       }
     },

@@ -63,6 +63,14 @@
                         "noatime"
                       ];
                     };
+                    "/snapshots" = {
+                      mountpoint = "/snapshots";
+                      mountOptions = [
+                        "subvol=snapshots"
+                        "compress=zstd"
+                        "noatime"
+                      ];
+                    };
                     "/persist" = {
                       mountOptions = [
                         "subvol=persist"
@@ -132,6 +140,32 @@
                       mountpoint = "/data";
                       mountOptions = [
                         "subvol=data"
+                        "compress=zstd"
+                        "rw"
+                        "relatime"
+                      ];
+                    };
+                    "/data/snapshots" = {
+                      mountpoint = "/data/snapshots";
+                      mountOptions = [
+                        "subvol=data-snapshots"
+                        "compress=zstd"
+                        "noatime"
+                      ];
+                    };
+                    "/data/plex" = {
+                      mountpoint = "/data/plex";
+                      mountOptions = [
+                        "subvol=plex"
+                        "compress=zstd"
+                        "rw"
+                        "relatime"
+                      ];
+                    };
+                    "/data/syncthing" = {
+                      mountpoint = "/data/syncthing";
+                      mountOptions = [
+                        "subvol=syncthing"
                         "compress=zstd"
                         "rw"
                         "relatime"

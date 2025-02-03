@@ -1,17 +1,31 @@
 { pkgs, ... }:
 
+let
+
+  btrbkusbKeyFile = "/root/btrbkusb.key";
+
+in
+
 {
   imports = [ ./hardware ];
 
   custom = {
     base = {
       users = [ "root" ];
-      system.network.wol.interface = "enp4s0";
+      system = {
+        btrfs.impermanence.extraFiles = [ btrbkusbKeyFile ];
+        network.wol.interface = "enp4s0";
+      };
     };
     roles.nas.enable = true;
   };
 
-  environment.systemPackages = [ pkgs.ffmpeg-full ];
+  environment = {
+    etc.crypttab.text = ''
+      btrbkusb UUID=401bb5fc-f62e-40d8-ab9c-1fcd0e10e86e ${btrbkusbKeyFile}
+    '';
+    systemPackages = [ pkgs.ffmpeg-full ];
+  };
 
   users.users = {
     admin = {

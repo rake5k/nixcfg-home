@@ -171,6 +171,15 @@
                         "relatime"
                       ];
                     };
+                    "/data/photo" = {
+                      mountpoint = "/data/photo";
+                      mountOptions = [
+                        "subvol=photo"
+                        "compress=zstd"
+                        "rw"
+                        "relatime"
+                      ];
+                    };
                     "/data/plex" = {
                       mountpoint = "/data/plex";
                       mountOptions = [

@@ -13,7 +13,10 @@ in
     base = {
       users = [ "root" ];
       system = {
-        btrfs.impermanence.extraFiles = [ btrbkusbKeyFile ];
+        btrfs = {
+          enable = true;
+          impermanence.extraFiles = [ btrbkusbKeyFile ];
+        };
         network.wol.interface = "enp4s0";
       };
     };

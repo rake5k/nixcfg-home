@@ -531,19 +531,17 @@
     "nixcfg-secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1737828223,
-        "narHash": "sha256-SKayQtE/mFzExbms2LDeSYu65yoy8Y43OYzvJvQy1tg=",
-        "ref": "main",
-        "rev": "1861fa8b68af97af4fbb009040d4ed8a5e2135a0",
-        "shallow": true,
-        "type": "git",
-        "url": "ssh://git@code.harke.ch/christian/nixcfg-secrets.git"
+        "lastModified": 1738703660,
+        "narHash": "sha256-HaoXy3YCwBgC3PkZR6vq3Y6N//2vQVci0w+1f5AfE2c=",
+        "owner": "rake5k",
+        "repo": "nixcfg-secrets",
+        "rev": "f95dab0b149bfde1fdcb38716d315ee0b1c6dd32",
+        "type": "github"
       },
       "original": {
-        "ref": "main",
-        "shallow": true,
-        "type": "git",
-        "url": "ssh://git@code.harke.ch/christian/nixcfg-secrets.git"
+        "owner": "rake5k",
+        "repo": "nixcfg-secrets",
+        "type": "github"
       }
     },
     "nixgl": {

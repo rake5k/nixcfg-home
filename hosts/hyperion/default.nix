@@ -1,8 +1,11 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 let
 
   btrbkusbKeyFile = "/root/btrbkusb.key";
+
+  passwdChristianSecret = "hyperion/passwd-christian";
+  passwdSophieSecret = "hyperion/passwd-sophie";
 
 in
 
@@ -11,6 +14,10 @@ in
 
   custom = {
     base = {
+      agenix.secrets = [
+        passwdChristianSecret
+        passwdSophieSecret
+      ];
       users = [ "root" ];
       system = {
         btrfs = {
@@ -31,6 +38,7 @@ in
   };
 
   users.users = {
+
     admin = {
       isNormalUser = true;
       uid = 1000;
@@ -46,7 +54,7 @@ in
     christian = {
       isNormalUser = true;
       uid = 1001;
-      initialPassword = "changeme";
+      hashedPasswordFile = config.age.secrets."${passwdChristianSecret}".path;
       createHome = true;
       home = "/data/home/christian";
       openssh.authorizedKeys.keys = [
@@ -54,6 +62,14 @@ in
         "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCb5D+ZCk1kcCarv31FCwPYrZACjph2HztoBQZNox9z++1a9CQgLaXBuJ0P7MjUA2yY8Be1uH83KdwZqMeSiaOIQK53hocrsRDrBFn2hXIrbHZ0UbZqrSGltrBLVcs45GdqK5nO21Nhs5iZ3SaA748cFANWC2nqA6wNCtBpqzjMGnlCI3L/oTShRwOzlcmfLZ3pxkcQNor7n49oLbQ/NkhAfOWXtHhdc0F98i8Dy+D4zFZ7yixfRgEpg1LVQEGC5+jDPmQtzeeLJ/d7whIfFOsttqKG2fuOznQM4nNRHMBM65iptTkuAoW6J7XtYy4fZdhEKWsxlRFQz5QDlQZ8C3cD"
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMdVJhGk9vy17BVLkSFd/K+FnbZzWVltIO6Jzc6LlarG"
       ];
+    };
+
+    sophie = {
+      isNormalUser = true;
+      uid = 1002;
+      hashedPasswordFile = config.age.secrets."${passwdSophieSecret}".path;
+      createHome = true;
+      home = "/data/home/sophie";
     };
   };
 

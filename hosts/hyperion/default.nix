@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 let
 
@@ -38,7 +38,6 @@ in
     etc.crypttab.text = ''
       btrbkusb UUID=401bb5fc-f62e-40d8-ab9c-1fcd0e10e86e ${btrbkusbKeyFile}
     '';
-    systemPackages = [ pkgs.ffmpeg-full ];
   };
 
   users = {

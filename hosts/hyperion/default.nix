@@ -36,7 +36,8 @@ in
 
   environment = {
     etc.crypttab.text = ''
-      btrbkusb UUID=401bb5fc-f62e-40d8-ab9c-1fcd0e10e86e ${btrbkusbKeyFile}
+      btrbkusb1 UUID=35263de4-8586-40db-92c3-d1afe19e9b5d ${btrbkusbKeyFile}
+      btrbkusb2 UUID=401bb5fc-f62e-40d8-ab9c-1fcd0e10e86e ${btrbkusbKeyFile}
     '';
   };
 

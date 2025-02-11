@@ -2,10 +2,7 @@
   imports = [ ./hardware ];
 
   custom = {
-    base.users = [
-      "root"
-      "christian"
-    ];
+    base.users = [ "christian" ];
 
     roles = {
       desktop.enable = true;

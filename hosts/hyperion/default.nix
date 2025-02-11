@@ -22,7 +22,6 @@ in
         passwdChristianSecret
         passwdSophieSecret
       ];
-      users = [ "root" ];
       system = {
         btrfs = {
           enable = true;

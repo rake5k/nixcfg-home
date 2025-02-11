@@ -5,10 +5,7 @@
 
   custom = {
     base = {
-      users = [
-        "root"
-        "christian"
-      ];
+      users = [ "christian" ];
       system = {
         luks = {
           enable = true;

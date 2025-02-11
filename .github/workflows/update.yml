@@ -9,5 +9,4 @@ jobs:
   nix-update:
     uses: "rake5k/flake-commons/.github/workflows/update-flake-lock.yml@main"
     secrets:
-      DEPLOY_KEY_SUBMODULES: "${{ secrets.NIXCFG_SECRETS_DEPLOY_KEY }}"
-      KNOWN_HOSTS: "${{ secrets.KNOWN_HOSTS_CODE_HARKE_CH }}"
+      GH_PRIVATE_INPUT_TOKEN: "${{ secrets.NIXCFG_SECRETS_TOKEN }}"

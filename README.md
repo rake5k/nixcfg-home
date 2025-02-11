@@ -2,7 +2,6 @@
 
 [![NixOS][nixos-badge]][nixos]
 [![Build and Test][ci-badge]][ci]
-[![Update][update-badge]][update]
 
 ## Supported configurations
 
@@ -21,10 +20,8 @@ See [flake.nix](flake.nix) for more information like `system`.
 
 For further details refer to the [README of the basic Nix Configuration Flake][nixcfg].
 
-[ci]: https://github.com/rake5k/nixcfg-home/actions/workflows/ci.yml
-[ci-badge]: https://github.com/rake5k/nixcfg-home/actions/workflows/ci.yml/badge.svg
-[update]: https://github.com/rake5k/nixcfg-home/actions/workflows/update.yml
-[update-badge]: https://github.com/rake5k/nixcfg-home/actions/workflows/update.yml/badge.svg
+[ci]: https://garnix.io/repo/rake5k/nixcfg-home
+[ci-badge]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fgarnix.io%2Fapi%2Fbadges%2Frake5k%2Fnixcfg-home%3Fbranch%3Dmain
 
 [home-manager]: https://github.com/nix-community/home-manager
 [nix-on-droid]: https://nix-community.github.io/nix-on-droid

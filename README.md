@@ -9,6 +9,7 @@
 * [NixOS][nixos]-managed
   * `altair` (personal desktop)
   * `antares` (spare gaming desktop)
+  * `hyperion` (home server)
   * `malmok` (legacy MacBook Pro)
   * `sirius-b` (Steam machine)
 * [Nix-on-Droid][nix-on-droid]-managed

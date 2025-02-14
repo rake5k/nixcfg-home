@@ -75,5 +75,7 @@ in
     };
   };
 
+  services.ollama.acceleration = "cuda";
+
   system.stateVersion = import ./state-version.nix;
 }

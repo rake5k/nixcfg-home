@@ -26,6 +26,7 @@
 
   # See: https://github.com/NixOS/nixos-hardware/issues/348#issuecomment-997123102
   hardware = {
+    enableRedistributableFirmware = true;
     graphics.enable = true;
     nvidia = {
       open = true;

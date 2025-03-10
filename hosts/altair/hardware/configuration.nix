@@ -14,33 +14,18 @@
   boot = {
     initrd = {
       availableKernelModules = [
+        "nvme"
         "xhci_pci"
         "ahci"
-        "nvme"
-        "usb_storage"
         "usbhid"
+        "usb_storage"
         "sd_mod"
       ];
-      kernelModules = [ "dm-snapshot" ];
-      luks.devices.root = {
-        device = "/dev/nvme0n1p2";
-      };
+      kernelModules = [ ];
     };
     kernelModules = [ "kvm-intel" ];
     extraModulePackages = [ ];
   };
-
-  fileSystems."/" = {
-    device = "/dev/disk/by-label/nixos";
-    fsType = "ext4";
-  };
-
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-label/boot";
-    fsType = "vfat";
-  };
-
-  swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
 
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";

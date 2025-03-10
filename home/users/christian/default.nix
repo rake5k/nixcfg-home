@@ -1,13 +1,13 @@
 { config, lib, ... }:
 
-with lib;
-
 let
 
   programsCfg = config.custom.programs;
   rolesCfg = config.custom.roles;
   userCfg = config.custom.users.christian;
   cfg = config.custom.home;
+
+  inherit (lib) mkEnableOption mkIf;
 
 in
 

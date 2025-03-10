@@ -22,7 +22,10 @@
       android.enable = true;
       containers.enable = true;
       desktop.enable = true;
-      gaming.enable = true;
+      gaming = {
+        enable = true;
+        simracing.enable = true;
+      };
     };
   };
 

@@ -7,6 +7,9 @@
     base = {
       users = [ "christian" ];
       system = {
+        btrfs = {
+          enable = true;
+        };
         luks = {
           enable = true;
           remoteUnlock = true;

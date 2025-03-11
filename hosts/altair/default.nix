@@ -9,6 +9,7 @@
       system = {
         btrfs = {
           enable = true;
+          btrbk.enable = true;
           impermanence.enable = true;
         };
         luks = {

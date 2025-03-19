@@ -15,7 +15,7 @@
 
   hardware.enableRedistributableFirmware = true;
 
-  nix.settings.max-jobs = 4;
+  nix.settings.max-jobs = 8;
 
   services.xserver = {
     dpi = 96;

@@ -18,7 +18,7 @@
         };
         network.wol = {
           enable = true;
-          interface = "enp6s0";
+          interface = "eno1";
         };
       };
     };
@@ -33,6 +33,9 @@
       };
     };
   };
+
+  # Update kernel from stable because of black screen on boot
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   system.stateVersion = import ./state-version.nix;
 }

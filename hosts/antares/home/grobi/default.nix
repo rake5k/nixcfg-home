@@ -1,30 +1,35 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 let
 
+  inherit (lib) getExe;
+
   ZOWIE-XL-LCD-DP = "BNQ-32555-21573-ZOWIE XL LCD-5AG00657SL0";
   ZOWIE-XL-LCD-HDMI = "BNQ-32554-21573-ZOWIE XL LCD-5AG00657SL0";
+
+  DP1 = "DP-1";
+  HDMI0 = "HDMI-0";
 
 in
 
 {
   custom.roles.desktop.xserver.grobi = {
     enable = true;
-    fallbackOutput = "DP-1";
+    availableOutputs = [ DP1 ];
     rules = [
       {
         name = "DP";
-        outputs_connected = [ "DP-4-${ZOWIE-XL-LCD-DP}" ];
-        configure_single = "DP-1";
-        primary = "DP-1";
+        outputs_connected = [ "${DP1}-${ZOWIE-XL-LCD-DP}" ];
+        configure_single = DP1;
+        primary = DP1;
         atomic = true;
-        execute_after = [ "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 60" ];
+        execute_after = [ "${getExe pkgs.xorg.xrandr} --output ${DP1} --mode 1920x1080 --rate 60" ];
       }
       {
         name = "HDMI";
-        outputs_connected = [ "HDMI-0-${ZOWIE-XL-LCD-HDMI}" ];
-        configure_single = "HDMI-0";
-        primary = "HDMI-0";
+        outputs_connected = [ "${HDMI0}-${ZOWIE-XL-LCD-HDMI}" ];
+        configure_single = HDMI0;
+        primary = HDMI0;
         atomic = true;
       }
     ];

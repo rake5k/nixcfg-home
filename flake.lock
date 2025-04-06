@@ -494,15 +494,16 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1743539615,
-        "narHash": "sha256-1eU7c1l/zbjIYQI1Dux7/4aDmonDiRafXY+QeIJZbvw=",
+        "lastModified": 1743948514,
+        "narHash": "sha256-MTVTbiT/wpdEnQmN+tiYbS9Pgybu/5K9kGX4HlbWMVQ=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "c592344cc752fbcd3b39225cf025a3ef8202a4a8",
+        "rev": "e8441eb70399cf34e3da6a552242530c4e5b85c8",
         "type": "github"
       },
       "original": {
         "owner": "rake5k",
+        "ref": "borg",
         "repo": "nixcfg",
         "type": "github"
       }
@@ -510,11 +511,11 @@
     "nixcfg-secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1741621744,
-        "narHash": "sha256-TflWSovffrWFYK3GUtZJ3zksH0d2XpFJPn6cIo1bc24=",
+        "lastModified": 1743945833,
+        "narHash": "sha256-+sx6Vrq4e0GbEZJjR0CWDzv9/H+HuY3i0QnVvGlZ6Ew=",
         "owner": "rake5k",
         "repo": "nixcfg-secrets",
-        "rev": "3f3b45e7eccb1e835db89bf3f00abd42ecd19e49",
+        "rev": "ab147c94b72fc238c91ea5a6031ddb1a1ddd2d68",
         "type": "github"
       },
       "original": {

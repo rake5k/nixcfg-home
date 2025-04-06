@@ -1,4 +1,4 @@
 [submodule "secrets"]
 	path = secrets
-	url = git@code.harke.ch:christian/nixcfg-secrets.git
+	url = https://github.com/rake5k/nixcfg-secrets.git
 	branch = main

@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixcfg.url = "github:rake5k/nixcfg";
+    nixcfg.url = "github:rake5k/nixcfg/borg";
     nixcfg-secrets = {
       url = "github:rake5k/nixcfg-secrets?shallow=1";
       flake = false;

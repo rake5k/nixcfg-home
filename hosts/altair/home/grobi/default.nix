@@ -93,7 +93,7 @@ in
         primary = GPU-DP0;
         atomic = false;
         execute_after = [
-          "${getExe pkgs.xorg.xrandr} --output ${GPU-DP0} --mode 1920x1080 --rate 144"
+          "${getExe pkgs.xorg.xrandr} --output ${GPU-DP0} --mode 3440x1440 --rate 144"
         ];
       }
     ];

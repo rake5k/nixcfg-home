@@ -6,6 +6,10 @@
     users.christian.enable = true;
 
     roles = {
+      desktop = {
+        passwordManager.enable = true;
+        wiki.enable = true;
+      };
       gaming.retro.enable = true;
       web.enable = true;
     };

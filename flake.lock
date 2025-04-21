@@ -510,11 +510,11 @@
     "nixcfg-secrets": {
       "flake": false,
       "locked": {
-        "lastModified": 1743975810,
-        "narHash": "sha256-P7l97ZEFWDeijmz24TNl5wmbQpB5q8Na9/As+LLAbSE=",
+        "lastModified": 1745231300,
+        "narHash": "sha256-qf0r2uJe0oyjfVdt9XI+39LQnrOYP04qodMsgkNeP8A=",
         "owner": "rake5k",
         "repo": "nixcfg-secrets",
-        "rev": "5c8785ec7dc541abb3905750360e0b4dc859a064",
+        "rev": "6863c6fab847c14ef15d7e8cf6fb92d6913203f9",
         "type": "github"
       },
       "original": {

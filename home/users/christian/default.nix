@@ -29,6 +29,7 @@ in
         gtk.enable = rolesCfg.desktop.enable;
         office.cli.enable = rolesCfg.office.cli.enable;
         polybar.enable = rolesCfg.desktop.xserver.polybar.enable;
+        web.enable = rolesCfg.web.enable;
         xmonad.enable = rolesCfg.desktop.xserver.xmonad.enable;
       };
     };

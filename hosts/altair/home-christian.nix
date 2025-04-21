@@ -18,10 +18,7 @@
         converters.enable = true;
       };
       office.enable = true;
-      web = {
-        enable = true;
-        nextcloud-client.enable = true;
-      };
+      web.enable = true;
     };
   };
 

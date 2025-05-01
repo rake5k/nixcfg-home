@@ -17,8 +17,11 @@
 
   nix.settings.max-jobs = 8;
 
-  services.xserver = {
-    dpi = 96;
-    videoDrivers = [ "amdgpu" ];
+  services = {
+    hardware.openrgb.enable = true;
+    xserver = {
+      dpi = 96;
+      videoDrivers = [ "amdgpu" ];
+    };
   };
 }

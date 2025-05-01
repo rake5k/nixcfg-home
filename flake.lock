@@ -709,6 +709,22 @@
         "type": "github"
       }
     },
+    "openrgb-experimental": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1745900046,
+        "narHash": "sha256-HuHhKp4eNdK2SLh1PyJX2nH9f1OO04fo20PNe96SvoI=",
+        "owner": "CalcProgrammer1",
+        "repo": "OpenRGB",
+        "rev": "a2315a45ff9372834ff1c9773d6529088c219d87",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "CalcProgrammer1",
+        "repo": "OpenRGB",
+        "type": "gitlab"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": [
@@ -763,6 +779,7 @@
         "nixcfg": "nixcfg",
         "nixcfg-secrets": "nixcfg-secrets",
         "nixpkgs": "nixpkgs_2",
+        "openrgb-experimental": "openrgb-experimental",
         "pre-commit-hooks": "pre-commit-hooks_2"
       }
     },

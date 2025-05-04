@@ -494,11 +494,11 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1746117324,
-        "narHash": "sha256-J0lyEyjYcGLJECGUuu5g8V/9GgoLk7WqJWfxzUEhh9g=",
+        "lastModified": 1746372161,
+        "narHash": "sha256-j6ye8ZPX0zKOke9m6Tb7YUHvGVPvveH0cUIEvx/AQFs=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "7c8452f088cc09789b9a4bd93a08bde3e22b7ab9",
+        "rev": "4dd11f95a5471336d2082fb3859bc254ccd9d19f",
         "type": "github"
       },
       "original": {

@@ -33,6 +33,8 @@
       powerManagement.enable = true;
       nvidiaPersistenced = true;
     };
+    # See: https://podman-desktop.io/docs/podman/gpu
+    nvidia-container-toolkit.enable = true;
   };
 
   # See: https://discourse.nixos.org/t/jellyfin-hardware-encoding-error-cannot-load-libcuda-so-1/29427/5

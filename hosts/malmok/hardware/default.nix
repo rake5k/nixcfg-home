@@ -6,7 +6,10 @@
     ./configuration.nix
   ];
 
-  boot.kernelParams = [ "video=LVDS-1:d" ];
+  boot = {
+    kernelPackages = pkgs.linuxKernel.packages.linux_6_6;
+    kernelParams = [ "video=LVDS-1:d" ];
+  };
 
   environment.variables = {
     __GLX_VENDOR_LIBRARY_NAME = "mesa";

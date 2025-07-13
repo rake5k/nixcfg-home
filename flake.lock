@@ -494,15 +494,16 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1752397893,
-        "narHash": "sha256-v/1E7DRUbiqUlTHJLR0c0i3H837fYa19djTJpkaPCxM=",
+        "lastModified": 1752407088,
+        "narHash": "sha256-D0E0j40m7zBjkvYvbEYo1yZpl00AtIUVjFzXUb0pClQ=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "b6753d3ab07b25366eeff58677d156121f592164",
+        "rev": "364fcc9d661aad1af28042b5403f075b23c79118",
         "type": "github"
       },
       "original": {
         "owner": "rake5k",
+        "ref": "steam-headless",
         "repo": "nixcfg",
         "type": "github"
       }

@@ -10,7 +10,15 @@
         passwordManager.enable = true;
         wiki.enable = true;
       };
-      gaming.retro.enable = true;
+      gaming = {
+        comms.enable = true;
+        minecraft.enable = true;
+        retro.enable = true;
+      };
+      multimedia = {
+        music.enable = true;
+        video.enable = true;
+      };
       web.enable = true;
     };
   };

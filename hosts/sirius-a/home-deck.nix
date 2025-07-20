@@ -1,4 +1,4 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 
 {
   custom = {
@@ -47,6 +47,9 @@
         done
       '';
     };
+    packages = with pkgs; [
+      steam
+    ];
     username = "deck";
     stateVersion = import ./state-version.nix;
   };

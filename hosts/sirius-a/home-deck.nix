@@ -1,15 +1,8 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ lib, ... }:
 
 let
 
   inherit (lib) hm mkForce;
-
-  steam = config.lib.nixGL.wrap pkgs.steam;
 
 in
 
@@ -63,9 +56,6 @@ in
         done
       '';
     };
-    packages = [
-      steam
-    ];
     username = "deck";
     stateVersion = import ./state-version.nix;
   };

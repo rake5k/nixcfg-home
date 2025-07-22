@@ -1,9 +1,25 @@
-{ lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+
+let
+
+  inherit (lib) hm mkForce;
+
+  steam = config.lib.nixGL.wrap pkgs.steam;
+
+in
 
 {
   custom = {
     base.non-nixos.enable = true;
-    users.christian.enable = true;
+    users.christian = {
+      enable = true;
+      shell.gnutils.enable = mkForce false;
+    };
 
     roles = {
       desktop = {
@@ -25,7 +41,7 @@
 
   home = {
     activation = {
-      updateAppMenu = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+      updateAppMenu = hm.dag.entryAfter [ "writeBoundary" ] ''
         SOURCE_DIR="$HOME/.nix-profile/share/applications"
         TARGET_DIR="$HOME/.local/share/applications"
 
@@ -47,7 +63,7 @@
         done
       '';
     };
-    packages = with pkgs; [
+    packages = [
       steam
     ];
     username = "deck";

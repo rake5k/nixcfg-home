@@ -23,6 +23,7 @@ in
         comms.enable = true;
         minecraft.enable = true;
         retro.enable = true;
+        streaming.enable = true;
       };
       multimedia = {
         music.enable = true;

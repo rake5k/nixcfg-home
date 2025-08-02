@@ -494,11 +494,11 @@
         "wallpapers": "wallpapers"
       },
       "locked": {
-        "lastModified": 1754136650,
-        "narHash": "sha256-pEi9EeWJ7Hl9hSfPoYKTiKoEHueaMzsx2kceEtk8igA=",
+        "lastModified": 1754139244,
+        "narHash": "sha256-xK0ThN9BhfWTRhgxex8g9jUu0f0efCHJtnliF5X/VZU=",
         "owner": "rake5k",
         "repo": "nixcfg",
-        "rev": "95b964f41cc4da3097a839a99045c783db109ef8",
+        "rev": "9bef517ccb572f423755a95a69da76965c5b5ae7",
         "type": "github"
       },
       "original": {
@@ -708,22 +708,6 @@
         "type": "github"
       }
     },
-    "openrgb-experimental": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1754117984,
-        "narHash": "sha256-p2RJ1Dqwmu3pEj1Fx0ybj/m2atslTvkvhVD3PbdyJqo=",
-        "owner": "CalcProgrammer1",
-        "repo": "OpenRGB",
-        "rev": "bd21325d0483814656e61d33ec837a93b1f24019",
-        "type": "gitlab"
-      },
-      "original": {
-        "owner": "CalcProgrammer1",
-        "repo": "OpenRGB",
-        "type": "gitlab"
-      }
-    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": [
@@ -778,7 +762,6 @@
         "nixcfg": "nixcfg",
         "nixcfg-secrets": "nixcfg-secrets",
         "nixpkgs": "nixpkgs_2",
-        "openrgb-experimental": "openrgb-experimental",
         "pre-commit-hooks": "pre-commit-hooks_2"
       }
     },

@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
 
@@ -18,18 +18,7 @@
   nix.settings.max-jobs = 8;
 
   services = {
-    hardware.openrgb = {
-      enable = true;
-      package = pkgs.openrgb.overrideAttrs {
-        version = "experimental";
-        src = inputs.openrgb-experimental;
-        postPatch = ''
-          patchShebangs scripts/build-udev-rules.sh
-          substituteInPlace scripts/build-udev-rules.sh \
-            --replace "/usr/bin/env chmod" "${pkgs.coreutils}/bin/chmod"
-        '';
-      };
-    };
+    hardware.openrgb.enable = true;
     xserver = {
       dpi = 96;
       videoDrivers = [ "amdgpu" ];

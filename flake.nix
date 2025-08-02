@@ -15,13 +15,6 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
-
-    # GPU support in latest experimental
-    # Update to stable release later
-    openrgb-experimental = {
-      url = "gitlab:CalcProgrammer1/OpenRGB";
-      flake = false;
-    };
   };
 
   outputs =
